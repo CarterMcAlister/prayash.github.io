@@ -36,10 +36,13 @@ var _componentRenderer = require("./component-renderer");
 
 var _componentRenderer2 = _interopRequireDefault(_componentRenderer);
 
+<<<<<<< HEAD
 var _layoutRenderer = require("./layout-renderer");
 
 var _layoutRenderer2 = _interopRequireDefault(_layoutRenderer);
 
+=======
+>>>>>>> fd65a333b1234103ed8c4413e9f921f726714be8
 var _asyncRequires = require("./async-requires");
 
 var _asyncRequires2 = _interopRequireDefault(_asyncRequires);
@@ -62,12 +65,22 @@ window.asyncRequires = _asyncRequires2.default;
 window.___loader = _loader2.default;
 
 window.matchPath = _reactRouterDom.matchPath;
+<<<<<<< HEAD
 // Let the site/plugins run code very early.
 (0, _apiRunnerBrowser2.default)("onClientEntry");
 
 // Let plugins register a service worker. The plugin just needs
 // to return true.
 if ((0, _apiRunnerBrowser2.default)("registerServiceWorker").length > 0) {
+=======
+
+// Let the site/plugins run code very early.
+(0, _apiRunnerBrowser2.default)("onClientEntry"
+
+// Let plugins register a service worker. The plugin just needs
+// to return true.
+);if ((0, _apiRunnerBrowser2.default)("registerServiceWorker").length > 0) {
+>>>>>>> fd65a333b1234103ed8c4413e9f921f726714be8
   require("./register-service-worker");
 }
 
@@ -109,10 +122,17 @@ var navigateTo = function navigateTo(pathname) {
 // window.___loadScriptsForPath = loadScriptsForPath
 window.___navigateTo = navigateTo;
 
+<<<<<<< HEAD
 var history = (0, _createBrowserHistory2.default)();
 
 // Call onRouteUpdate on the initial page load.
 (0, _apiRunnerBrowser2.default)("onRouteUpdate", {
+=======
+var history = (0, _createBrowserHistory2.default
+
+// Call onRouteUpdate on the initial page load.
+)();(0, _apiRunnerBrowser2.default)("onRouteUpdate", {
+>>>>>>> fd65a333b1234103ed8c4413e9f921f726714be8
   location: history.location,
   action: history.action
 });
@@ -158,6 +178,7 @@ var DefaultRouter = function DefaultRouter(_ref2) {
   );
 };
 
+<<<<<<< HEAD
 _loader2.default.getResourcesForPathname(window.location.pathname, function () {
   var Root = function Root() {
     return (0, _react.createElement)(AltRouter ? AltRouter : DefaultRouter, null, (0, _react.createElement)(_reactRouterScroll.ScrollContext, { shouldUpdateScroll: shouldUpdateScroll }, (0, _react.createElement)((0, _reactRouterDom.withRouter)(_layoutRenderer2.default), {
@@ -183,6 +204,49 @@ _loader2.default.getResourcesForPathname(window.location.pathname, function () {
   var NewRoot = (0, _apiRunnerBrowser2.default)("wrapRootComponent", { Root: Root }, Root)[0];
   _reactDom2.default.render(_react2.default.createElement(NewRoot, null), typeof window !== "undefined" ? document.getElementById("___gatsby") : void 0, function () {
     (0, _apiRunnerBrowser2.default)("onInitialClientRender");
+=======
+var loadLayout = function loadLayout(cb) {
+  if (_asyncRequires2.default.layouts["index"]) {
+    _asyncRequires2.default.layouts["index"](function (err, executeChunk) {
+      var module = executeChunk();
+      cb(module);
+    });
+  } else {
+    cb(function (props) {
+      return _react2.default.createElement(
+        "div",
+        null,
+        props.children()
+      );
+    });
+  }
+};
+
+loadLayout(function (layout) {
+  _loader2.default.getResourcesForPathname(window.location.pathname, function () {
+    var Root = function Root() {
+      return (0, _react.createElement)(AltRouter ? AltRouter : DefaultRouter, null, (0, _react.createElement)(_reactRouterScroll.ScrollContext, { shouldUpdateScroll: shouldUpdateScroll }, (0, _react.createElement)((0, _reactRouterDom.withRouter)(layout), {
+        children: function children(layoutProps) {
+          return (0, _react.createElement)(_reactRouterDom.Route, {
+            render: function render(routeProps) {
+              attachToHistory(routeProps.history);
+              var props = layoutProps ? layoutProps : routeProps;
+              if (_loader2.default.getPage(props.location.pathname)) {
+                return (0, _react.createElement)(_componentRenderer2.default, (0, _extends3.default)({}, props));
+              } else {
+                return (0, _react.createElement)(_componentRenderer2.default, {
+                  location: { pathname: "/404.html" }
+                });
+              }
+            }
+          });
+        }
+      })));
+    };
+
+    var NewRoot = (0, _apiRunnerBrowser2.default)("wrapRootComponent", { Root: Root }, Root)[0];
+    _reactDom2.default.render(_react2.default.createElement(NewRoot, null), typeof window !== "undefined" ? document.getElementById("___gatsby") : void 0);
+>>>>>>> fd65a333b1234103ed8c4413e9f921f726714be8
   });
 });
 //# sourceMappingURL=production-app.js.map

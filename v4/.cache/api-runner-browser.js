@@ -15,10 +15,17 @@ module.exports = function (api, args, defaultReturn) {
       var result = plugin.plugin[api](args, plugin.options);
       return result;
     }
+<<<<<<< HEAD
   });
 
   // Filter out undefined results.
   results = results.filter(function (result) {
+=======
+  }
+
+  // Filter out undefined results.
+  );results = results.filter(function (result) {
+>>>>>>> fd65a333b1234103ed8c4413e9f921f726714be8
     return typeof result !== "undefined";
   });
 

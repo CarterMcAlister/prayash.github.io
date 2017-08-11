@@ -1,12 +1,17 @@
 [
     {
+<<<<<<< HEAD
         "componentChunkName": "component---src-templates-blog-post-js",
         "layout": "index",
         "layoutComponentChunkName": "component---src-layouts-index-js",
+=======
+        "componentChunkName": "page-component---src-templates-blog-post-js",
+>>>>>>> fd65a333b1234103ed8c4413e9f921f726714be8
         "jsonName": "blog-on-creativity.json",
         "path": "/blog/on-creativity/"
     },
     {
+<<<<<<< HEAD
         "componentChunkName": "component---src-templates-blog-post-js",
         "layout": "index",
         "layoutComponentChunkName": "component---src-layouts-index-js",
@@ -17,62 +22,102 @@
         "componentChunkName": "component---src-templates-blog-post-js",
         "layout": "index",
         "layoutComponentChunkName": "component---src-layouts-index-js",
+=======
+        "componentChunkName": "page-component---src-templates-blog-post-js",
+>>>>>>> fd65a333b1234103ed8c4413e9f921f726714be8
         "jsonName": "blog-origins.json",
         "path": "/blog/origins/"
     },
     {
+<<<<<<< HEAD
         "componentChunkName": "component---src-templates-blog-post-js",
         "layout": "index",
         "layoutComponentChunkName": "component---src-layouts-index-js",
+=======
+        "componentChunkName": "page-component---src-templates-blog-post-js",
+>>>>>>> fd65a333b1234103ed8c4413e9f921f726714be8
         "jsonName": "blog-undiscovered-colors.json",
         "path": "/blog/undiscovered-colors/"
     },
     {
+<<<<<<< HEAD
         "componentChunkName": "component---src-pages-404-js",
         "layout": "index",
         "layoutComponentChunkName": "component---src-layouts-index-js",
+=======
+        "componentChunkName": "page-component---src-templates-blog-post-js",
+        "jsonName": "blog-evolution-of-effulgence.json",
+        "path": "/blog/evolution-of-effulgence/"
+    },
+    {
+        "componentChunkName": "page-component---src-pages-404-js",
+>>>>>>> fd65a333b1234103ed8c4413e9f921f726714be8
         "jsonName": "404.json",
         "path": "/404/"
     },
     {
+<<<<<<< HEAD
         "componentChunkName": "component---src-pages-about-js",
         "layout": "index",
         "layoutComponentChunkName": "component---src-layouts-index-js",
+=======
+        "componentChunkName": "page-component---src-pages-about-js",
+>>>>>>> fd65a333b1234103ed8c4413e9f921f726714be8
         "jsonName": "about.json",
         "path": "/about/"
     },
     {
+<<<<<<< HEAD
         "componentChunkName": "component---src-pages-index-js",
         "layout": "index",
         "layoutComponentChunkName": "component---src-layouts-index-js",
+=======
+        "componentChunkName": "page-component---src-pages-index-js",
+>>>>>>> fd65a333b1234103ed8c4413e9f921f726714be8
         "jsonName": "index.json",
         "path": "/"
     },
     {
+<<<<<<< HEAD
         "componentChunkName": "component---src-pages-music-js",
         "layout": "index",
         "layoutComponentChunkName": "component---src-layouts-index-js",
+=======
+        "componentChunkName": "page-component---src-pages-music-js",
+>>>>>>> fd65a333b1234103ed8c4413e9f921f726714be8
         "jsonName": "music.json",
         "path": "/music/"
     },
     {
+<<<<<<< HEAD
         "componentChunkName": "component---src-pages-work-js",
         "layout": "index",
         "layoutComponentChunkName": "component---src-layouts-index-js",
+=======
+        "componentChunkName": "page-component---src-pages-work-js",
+>>>>>>> fd65a333b1234103ed8c4413e9f921f726714be8
         "jsonName": "work.json",
         "path": "/work/"
     },
     {
+<<<<<<< HEAD
         "componentChunkName": "component---src-pages-404-js",
         "layout": "index",
         "layoutComponentChunkName": "component---src-layouts-index-js",
+=======
+        "componentChunkName": "page-component---src-pages-404-js",
+>>>>>>> fd65a333b1234103ed8c4413e9f921f726714be8
         "jsonName": "404-html.json",
         "path": "/404.html"
     },
     {
+<<<<<<< HEAD
         "componentChunkName": "component---src-pages-blog-index-js",
         "layout": "index",
         "layoutComponentChunkName": "component---src-layouts-index-js",
+=======
+        "componentChunkName": "page-component---src-pages-blog-index-js",
+>>>>>>> fd65a333b1234103ed8c4413e9f921f726714be8
         "jsonName": "blog.json",
         "path": "/blog/"
     }

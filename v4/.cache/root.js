@@ -36,10 +36,13 @@ var _componentRenderer = require("./component-renderer");
 
 var _componentRenderer2 = _interopRequireDefault(_componentRenderer);
 
+<<<<<<< HEAD
 var _layoutRenderer = require("./layout-renderer");
 
 var _layoutRenderer2 = _interopRequireDefault(_layoutRenderer);
 
+=======
+>>>>>>> fd65a333b1234103ed8c4413e9f921f726714be8
 var _loader = require("./loader");
 
 var _loader2 = _interopRequireDefault(_loader);
@@ -50,10 +53,17 @@ _loader2.default.addPagesArray(_pages2.default);
 _loader2.default.addDevRequires(_syncRequires2.default);
 window.___loader = _loader2.default;
 
+<<<<<<< HEAD
 var history = (0, _createBrowserHistory2.default)();
 
 // Call onRouteUpdate on the initial page load.
 (0, _apiRunnerBrowser2.default)("onRouteUpdate", {
+=======
+var history = (0, _createBrowserHistory2.default
+
+// Call onRouteUpdate on the initial page load.
+)();(0, _apiRunnerBrowser2.default)("onRouteUpdate", {
+>>>>>>> fd65a333b1234103ed8c4413e9f921f726714be8
   location: history.location,
   action: history.action
 });
@@ -89,6 +99,7 @@ function shouldUpdateScroll(prevRouterProps, _ref) {
   return true;
 }
 
+<<<<<<< HEAD
 var noMatch = void 0;
 for (var i = 0; i < _pages2.default.length; i++) {
   if (_pages2.default[i].path === "/dev-404-page/") {
@@ -96,6 +107,11 @@ for (var i = 0; i < _pages2.default.length; i++) {
     break;
   }
 }
+=======
+var noMatch = _pages2.default.find(function (r) {
+  return r.path === "/dev-404-page/";
+});
+>>>>>>> fd65a333b1234103ed8c4413e9f921f726714be8
 
 var addNotFoundRoute = function addNotFoundRoute() {
   if (noMatch) {
@@ -126,18 +142,46 @@ var DefaultRouter = function DefaultRouter(_ref2) {
   );
 };
 
+<<<<<<< HEAD
+=======
+// Use default layout if one isn't set.
+var layout = void 0;
+if (_syncRequires2.default.layouts["index"]) {
+  layout = _syncRequires2.default.layouts["index"];
+} else {
+  layout = function layout(_ref3) {
+    var children = _ref3.children;
+    return _react2.default.createElement(
+      "div",
+      null,
+      children()
+    );
+  };
+}
+
+>>>>>>> fd65a333b1234103ed8c4413e9f921f726714be8
 // Always have to have one top-level layout
 // can have ones below that. Find page, if has different
 // parent layout(s), loop through those until finally the
 // page. Tricky part is avoiding re-mounting I think...
 
 var Root = function Root() {
+<<<<<<< HEAD
   return (0, _react.createElement)(AltRouter ? AltRouter : DefaultRouter, null, (0, _react.createElement)(_reactRouterScroll.ScrollContext, { shouldUpdateScroll: shouldUpdateScroll }, (0, _react.createElement)((0, _reactRouterDom.withRouter)(_layoutRenderer2.default), {
     children: function children(layoutProps) {
       return (0, _react.createElement)(_reactRouterDom.Route, {
         render: function render(routeProps) {
           var props = layoutProps ? layoutProps : routeProps;
           attachToHistory(props.history);
+=======
+  return (0, _react.createElement)(AltRouter ? AltRouter : DefaultRouter, null, (0, _react.createElement)(_reactRouterScroll.ScrollContext, { shouldUpdateScroll: shouldUpdateScroll }, (0, _react.createElement)((0, _reactRouterDom.withRouter)(layout), {
+    children: function children(layoutProps) {
+      return (0, _react.createElement)(_reactRouterDom.Route, {
+        render: function render(routeProps) {
+          attachToHistory(routeProps.history);
+
+          var props = layoutProps ? layoutProps : routeProps;
+>>>>>>> fd65a333b1234103ed8c4413e9f921f726714be8
           var pageResources = _loader2.default.getResourcesForPathname(props.location.pathname);
           if (pageResources) {
             return (0, _react.createElement)(_componentRenderer2.default, (0, _extends3.default)({}, props, {
@@ -149,11 +193,19 @@ var Root = function Root() {
         }
       });
     }
+<<<<<<< HEAD
   })));
 };
 
 // Let site, plugins wrap the site e.g. for Redux.
 var WrappedRoot = (0, _apiRunnerBrowser2.default)("wrapRootComponent", { Root: Root }, Root)[0];
+=======
+  }))
+
+  // Let site, plugins wrap the site e.g. for Redux.
+  );
+};var WrappedRoot = (0, _apiRunnerBrowser2.default)("wrapRootComponent", { Root: Root }, Root)[0];
+>>>>>>> fd65a333b1234103ed8c4413e9f921f726714be8
 
 exports.default = WrappedRoot;
 //# sourceMappingURL=root.js.map

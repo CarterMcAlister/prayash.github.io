@@ -17,7 +17,11 @@
                 },
                 {
                     "node": {
+<<<<<<< HEAD
                         "excerpt": "When I started building this website, I started to think about what it would mean for it to be different. I knew I wanted to stray away from...",
+=======
+                        "excerpt": "tl;dr What started out as a school project eventually turned into effulgence.io. When I started this project, I started to think about what...",
+>>>>>>> fd65a333b1234103ed8c4413e9f921f726714be8
                         "fields": {
                             "slug": "/blog/evolution-of-effulgence/"
                         },

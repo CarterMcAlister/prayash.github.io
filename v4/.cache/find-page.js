@@ -9,10 +9,17 @@ module.exports = function (pages) {
   var pathPrefix = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : "";
   return function (pathname) {
     // Remove the pathPrefix from the pathname.
+<<<<<<< HEAD
     var trimmedPathname = pathname.slice(pathPrefix.length);
 
     // Remove any hashfragment
     if (trimmedPathname.split("#").length > 1) {
+=======
+    var trimmedPathname = pathname.slice(pathPrefix.length
+
+    // Remove any hashfragment
+    );if (trimmedPathname.split("#").length > 1) {
+>>>>>>> fd65a333b1234103ed8c4413e9f921f726714be8
       trimmedPathname = trimmedPathname.split("#").slice(0, -1).join("");
     }
 

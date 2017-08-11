@@ -99,21 +99,33 @@ var ComponentRenderer = function (_React$Component) {
         }
       });
     }
+<<<<<<< HEAD
   }, {
     key: "shouldComponentUpdate",
     value: function shouldComponentUpdate(nextProps, nextState) {
       // Check if the component or json have changed.
+=======
+
+    // Check if the component or json have changed
+
+  }, {
+    key: "shouldComponentUpdate",
+    value: function shouldComponentUpdate(nextProps, nextState) {
+>>>>>>> fd65a333b1234103ed8c4413e9f921f726714be8
       if (this.state.pageResources.component !== nextState.pageResources.component) {
         return true;
       }
       if (this.state.pageResources.json !== nextState.pageResources.json) {
         return true;
       }
+<<<<<<< HEAD
       // Check if location has changed on a page using internal routing
       // via matchPath configuration.
       if (this.state.location.key !== nextState.location.key && nextState.pageResources.page && nextState.pageResources.page.matchPath) {
         return true;
       }
+=======
+>>>>>>> fd65a333b1234103ed8c4413e9f921f726714be8
       return false;
     }
   }, {

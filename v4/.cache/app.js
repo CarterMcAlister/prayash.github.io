@@ -22,6 +22,7 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 
 var apiRunner = require("./api-runner-browser");
 
+<<<<<<< HEAD
 window.___emitter = require("./emitter");
 
 // Let the site/plugins run code very early.
@@ -29,6 +30,15 @@ apiRunner("onClientEntry");
 
 // Hook up the client to socket.io on server
 (0, _socketIo2.default)();
+=======
+window.___emitter = require("./emitter"
+
+// Let the site/plugins run code very early.
+);apiRunner("onClientEntry"
+
+// Hook up the client to socket.io on server
+);(0, _socketIo2.default
+>>>>>>> fd65a333b1234103ed8c4413e9f921f726714be8
 
 /**
  * Service Workers are persistent by nature. They stick around,
@@ -38,7 +48,11 @@ apiRunner("onClientEntry");
  *
  * Let's unregister the service workers in development, and tidy up a few errors.
  */
+<<<<<<< HEAD
 if ("serviceWorker" in navigator) {
+=======
+)();if ("serviceWorker" in navigator) {
+>>>>>>> fd65a333b1234103ed8c4413e9f921f726714be8
   navigator.serviceWorker.getRegistrations().then(function (registrations) {
     var _iteratorNormalCompletion = true;
     var _didIteratorError = false;
@@ -78,9 +92,13 @@ _reactDom2.default.render(_react2.default.createElement(
   _reactHotLoader.AppContainer,
   null,
   _react2.default.createElement(Root, null)
+<<<<<<< HEAD
 ), rootElement, function () {
   apiRunner("onInitialClientRender");
 });
+=======
+), rootElement);
+>>>>>>> fd65a333b1234103ed8c4413e9f921f726714be8
 
 if (module.hot) {
   module.hot.accept("./root", function () {
@@ -92,9 +110,13 @@ if (module.hot) {
       _reactHotLoader.AppContainer,
       null,
       _react2.default.createElement(NextRoot, null)
+<<<<<<< HEAD
     ), rootElement, function () {
       apiRunner("onInitialClientRender");
     });
+=======
+    ), rootElement);
+>>>>>>> fd65a333b1234103ed8c4413e9f921f726714be8
   });
 }
 //# sourceMappingURL=app.js.map
