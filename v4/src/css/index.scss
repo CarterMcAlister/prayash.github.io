@@ -614,6 +614,11 @@ header#header {
   animation: fade 1000ms ease-out both;
 }
 
+.fade-slow {
+  -webkit-animation: fade 2000ms linear both;
+  animation: fade 2000ms linear both;
+}
+
 @-webkit-keyframes fade {
   0% {
     opacity: 0.0;

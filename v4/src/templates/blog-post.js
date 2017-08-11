@@ -56,17 +56,17 @@ class BlogPostTemplate extends React.Component {
         </article>
         <br />
         <aside className="post-footer">
-          <ul>
+          {/* <ul>
             <li>
               <TweetThis {...frontmatter} />
             </li>
             <li>
               <FacebookShare
                 {...frontmatter}
-                path={this.props.location.pathnam}
+                path={this.props.location.pathname}
               />
             </li>
-          </ul>
+          </ul> */}
           {/* <ReadNext posts={nextPosts} /> */}
           {/* <hr /> */}
           {/* <About /> */}

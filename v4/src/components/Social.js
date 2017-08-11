@@ -17,7 +17,7 @@ const TweetThis = props =>
 
 const FacebookShare = props =>
   <FacebookShareButton
-    url={`http://effulgence.io${props.path}`}
+    url={`http://effulgence.io{props.path}`}
     title={props.title}
     className={'share-icons'}
   >
