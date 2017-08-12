@@ -5,7 +5,9 @@ description: "A short overview of how I built this site."
 draft: false
 ---
 
-When I started building this website, I started to think about what it would mean for my website to be different. I knew I wanted to stray away from the generic patterns that are employed on so many webpages out there. But I didn't want to stray so far from them that it felt foreign to the average visitor. I wanted the interface of my site to have a fresh look to bring something different to the table, but still have a sense of familiarity to it so that people could curiously click through without hesitation.
+tl;dr What started out as a school project eventually turned into effulgence.io.
+
+When I started this project, I started to think about what it would mean for my website to be different. I knew I wanted to stray away from the generic patterns that are employed on so many webpages out there. But I didn't want to stray too far from these familiar patterns that it felt foreign to the average visitor. I wanted the interface of my site to have a fresh look to bring something different to the table, but still have a sense of intuitiveness to it so that people could curiously click through without hesitation.
 
 After a few hours of brainstorming and trying out various designs, I came up with this:
 

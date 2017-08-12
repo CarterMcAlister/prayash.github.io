@@ -100,6 +100,6 @@ export default class Waves extends Component {
   }
 
   render() {
-    return <div ref="container" className="fade-slow" />
+    return <div ref="container" />
   }
 }

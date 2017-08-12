@@ -12,7 +12,7 @@ export default class Portfolio extends Component {
     return (
       <div id="portfolio" className="fade">
         <article className="project">
-          <a href="http://effulgence.io/nucleactor" target="_blank">
+          <a href="http://effulgence.io/Nucleactor" target="_blank">
             <img src={nucleactor} alt="nucleactor" width="600px" />
           </a>
           <span className="project-details">
@@ -24,7 +24,7 @@ export default class Portfolio extends Component {
         </article>
 
         <article className="project">
-          <a href="http://effulgence.io/musiverse" target="_blank">
+          <a href="http://effulgence.io/Musiverse" target="_blank">
             <img src={musiverse} alt="musiverse" width="600px" />
           </a>
           <span className="project-details">
