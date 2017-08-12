@@ -65,11 +65,14 @@ module.exports = function (_React$Component) {
             name: "viewport",
             content: "width=device-width, initial-scale=1, shrink-to-fit=no"
           }),
+<<<<<<< HEAD
+=======
           _react2.default.createElement(
             "title",
             null,
             "Gatsby.js"
           ),
+>>>>>>> fd65a333b1234103ed8c4413e9f921f726714be8
           this.props.headComponents,
           css
         ),

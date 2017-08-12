@@ -40,6 +40,28 @@ var pathChunkName = function pathChunkName(path) {
   return "path---" + name;
 };
 
+<<<<<<< HEAD
+var getPage = function getPage(path) {
+  return _pages2.default.find(function (page) {
+    return page.path === path;
+  });
+};
+var defaultLayout = function defaultLayout(props) {
+  return _react2.default.createElement(
+    "div",
+    null,
+    props.children()
+  );
+};
+
+var getLayout = function getLayout(page) {
+  var layout = _syncRequires2.default.layouts[page.layoutComponentChunkName];
+  return layout ? layout : defaultLayout;
+};
+
+var $ = _react2.default.createElement;
+
+=======
 var $ = _react2.default.createElement;
 
 // Use default layout if one isn't set.
@@ -56,6 +78,7 @@ if (_syncRequires2.default.layouts.index) {
   };
 }
 
+>>>>>>> fd65a333b1234103ed8c4413e9f921f726714be8
 module.exports = function (locals, callback) {
   var pathPrefix = "/";
   if (__PREFIX_PATHS__) {
@@ -93,6 +116,22 @@ module.exports = function (locals, callback) {
       pathname: locals.path
     },
     context: {}
+<<<<<<< HEAD
+  }, $(_reactRouterDom.Route, {
+    render: function render(props) {
+      var page = getPage(props.location.pathname);
+      var layout = getLayout(page);
+      return $((0, _reactRouterDom.withRouter)(layout), (0, _extends3.default)({}, props, {
+        children: function children(props) {
+          return $(_syncRequires2.default.components[page.componentChunkName], (0, _extends3.default)({}, props, _syncRequires2.default.json[page.jsonName]));
+        }
+      }));
+    }
+  }));
+
+  // Let the site or plugin render the page component.
+  (0, _apiRunnerSsr2.default)("replaceRenderer", {
+=======
   }, $((0, _reactRouterDom.withRouter)(layout), {
     children: function children(layoutProps) {
       return $(_reactRouterDom.Route, {
@@ -109,16 +148,24 @@ module.exports = function (locals, callback) {
 
   // Let the site or plugin render the page component.
   );(0, _apiRunnerSsr2.default)("replaceRenderer", {
+>>>>>>> fd65a333b1234103ed8c4413e9f921f726714be8
     bodyComponent: bodyComponent,
     replaceBodyHTMLString: replaceBodyHTMLString,
     setHeadComponents: setHeadComponents,
     setPreBodyComponents: setPreBodyComponents,
     setPostBodyComponents: setPostBodyComponents,
     setBodyProps: setBodyProps
+<<<<<<< HEAD
+  });
+
+  // If no one stepped up, we'll handle it.
+  if (!bodyHTML) {
+=======
   }
 
   // If no one stepped up, we'll handle it.
   );if (!bodyHTML) {
+>>>>>>> fd65a333b1234103ed8c4413e9f921f726714be8
     bodyHTML = (0, _server.renderToString)(bodyComponent);
   }
 
@@ -128,10 +175,17 @@ module.exports = function (locals, callback) {
     setPostBodyComponents: setPostBodyComponents,
     setBodyProps: setBodyProps,
     pathname: locals.path
+<<<<<<< HEAD
+  });
+
+  // Add the chunk-manifest as a head component.
+  var chunkManifest = require("!raw!../public/chunk-manifest.json");
+=======
   }
 
   // Add the chunk-manifest as a head component.
   );var chunkManifest = require("!raw!../public/chunk-manifest.json");
+>>>>>>> fd65a333b1234103ed8c4413e9f921f726714be8
 
   headComponents.unshift(_react2.default.createElement("script", {
     id: "webpack-manifest",
@@ -149,9 +203,16 @@ module.exports = function (locals, callback) {
 
 
   // Create paths to scripts
+<<<<<<< HEAD
+  var page = _pages2.default.find(function (page) {
+    return page.path === locals.path;
+  });
+  var scripts = ["commons", "app", pathChunkName(locals.path), page.componentChunkName, page.layoutComponentChunkName].map(function (s) {
+=======
   var scripts = ["commons", "app", "layout-component---index", pathChunkName(locals.path), _pages2.default.find(function (page) {
     return page.path === locals.path;
   }).componentChunkName].map(function (s) {
+>>>>>>> fd65a333b1234103ed8c4413e9f921f726714be8
     var fetchKey = "assetsByChunkName[" + s + "]";
 
     var fetchedScript = (0, _lodash.get)(stats, fetchKey);
@@ -178,11 +239,19 @@ module.exports = function (locals, callback) {
   scripts.forEach(function (script) {
     // Add preload <link>s for scripts.
     headComponents.unshift(_react2.default.createElement("link", { rel: "preload", key: script, href: script, as: "script" }));
+<<<<<<< HEAD
+  });
+
+  // Add script loader for page scripts to the head.
+  // Taken from https://www.html5rocks.com/en/tutorials/speed/script-loading/
+  var scriptsString = scripts.map(function (s) {
+=======
   }
 
   // Add script loader for page scripts to the head.
   // Taken from https://www.html5rocks.com/en/tutorials/speed/script-loading/
   );var scriptsString = scripts.map(function (s) {
+>>>>>>> fd65a333b1234103ed8c4413e9f921f726714be8
     return "\"" + s + "\"";
   }).join(",");
   headComponents.push(_react2.default.createElement("script", {

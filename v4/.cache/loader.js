@@ -4,6 +4,13 @@ var _getIterator2 = require("babel-runtime/core-js/get-iterator");
 
 var _getIterator3 = _interopRequireDefault(_getIterator2);
 
+<<<<<<< HEAD
+var _react = require("react");
+
+var _react2 = _interopRequireDefault(_react);
+
+=======
+>>>>>>> fd65a333b1234103ed8c4413e9f921f726714be8
 var _findPage = require("./find-page");
 
 var _findPage2 = _interopRequireDefault(_findPage);
@@ -87,7 +94,11 @@ var fetchResource = function fetchResource(resourceName) {
     });
   } else {
     // Find resource
+<<<<<<< HEAD
+    var resourceFunction = resourceName.slice(0, 9) === "component" ? asyncRequires.components[resourceName] || asyncRequires.layouts[resourceName] : asyncRequires.json[resourceName];
+=======
     var resourceFunction = resourceName.slice(0, 6) === "page-c" ? asyncRequires.components[resourceName] : asyncRequires.json[resourceName];
+>>>>>>> fd65a333b1234103ed8c4413e9f921f726714be8
 
     // Download the resource
     resourceFunction(function (err, executeChunk) {
@@ -168,10 +179,17 @@ var queue = {
     }
 
     // Sort pages by pathCount
+<<<<<<< HEAD
+    pathArray.sort(sortPagesByCount);
+
+    // Add resources to queue.
+    var page = findPage(path);
+=======
     pathArray.sort(sortPagesByCount
 
     // Add resources to queue.
     );var page = findPage(path);
+>>>>>>> fd65a333b1234103ed8c4413e9f921f726714be8
     if (page.jsonName) {
       if (!resourcesCount[page.jsonName]) {
         resourcesCount[page.jsonName] = 1 + mountOrderBoost;
@@ -272,10 +290,18 @@ var queue = {
     if (process.env.NODE_ENV !== "production") {
       var page = findPage(path);
       if (!page) return;
+<<<<<<< HEAD
+      var pageResources = {
+        component: syncRequires.components[page.componentChunkName],
+        json: syncRequires.json[page.jsonName],
+        layout: syncRequires.layouts[page.layoutComponentChunkName],
+        page: page
+=======
 
       var pageResources = {
         component: syncRequires.components[page.componentChunkName],
         json: syncRequires.json[page.jsonName]
+>>>>>>> fd65a333b1234103ed8c4413e9f921f726714be8
       };
       cb(pageResources);
       return pageResources;
@@ -304,6 +330,20 @@ var queue = {
         return pathScriptsCache[path];
       }
 
+<<<<<<< HEAD
+      _emitter2.default.emit("onPreLoadPageResources", { path: path });
+      // Nope, we need to load resource(s)
+      var component = void 0;
+      var json = void 0;
+      var layout = void 0;
+      // Load the component/json/layout and parallel and call this
+      // function when they're done loading. When both are loaded,
+      // we move on.
+      var done = function done() {
+        if (component && json && (!_page.layoutComponentChunkName || layout)) {
+          pathScriptsCache[path] = { component: component, json: json, layout: layout };
+          var _pageResources = { component: component, json: json, layout: layout };
+=======
       _emitter2.default.emit("onPreLoadPageResources", { path: path }
       // Nope, we need to load resource(s)
       );var component = void 0;
@@ -315,6 +355,7 @@ var queue = {
         if (component && json) {
           pathScriptsCache[path] = { component: component, json: json };
           var _pageResources = { component: component, json: json };
+>>>>>>> fd65a333b1234103ed8c4413e9f921f726714be8
           cb(_pageResources);
           _emitter2.default.emit("onPostLoadPageResources", {
             page: _page,
@@ -337,6 +378,17 @@ var queue = {
         done();
       });
 
+<<<<<<< HEAD
+      _page.layoutComponentChunkName && getResourceModule(_page.layoutComponentChunkName, function (err, l) {
+        if (err) {
+          console.log("Loading the Layout for " + _page.path + " failed");
+        }
+        layout = l;
+        done();
+      });
+
+=======
+>>>>>>> fd65a333b1234103ed8c4413e9f921f726714be8
       return undefined;
     }
   },

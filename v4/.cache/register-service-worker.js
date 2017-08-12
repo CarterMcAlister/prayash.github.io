@@ -8,7 +8,11 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 
 var pathPrefix = "/";
 if (__PREFIX_PATHS__) {
+<<<<<<< HEAD
+  pathPrefix = __PATH_PREFIX__ + "/";
+=======
   pathPrefix = __PATH_PREFIX__;
+>>>>>>> fd65a333b1234103ed8c4413e9f921f726714be8
 }
 
 if ("serviceWorker" in navigator) {
