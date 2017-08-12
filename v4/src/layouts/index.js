@@ -12,6 +12,15 @@ export default class Template extends Component {
     children: PropTypes.func
   }
 
+  constructor(...args) {
+    super(...args)
+    this.state = { show: false }
+
+    setTimeout(() => {
+      this.setState({ show: true })
+    }, 1)
+  }
+
   render() {
     const route = this.props.location.pathname
 
@@ -19,7 +28,9 @@ export default class Template extends Component {
       <main className={route === '/' ? 'home' : 'notHome'}>
         <Header breadcrumb={route === '/' ? '' : route} />
 
+        {/* <Fade in={this.state.show}> */}
         <Waves cameraZoom={route === '/' ? 7 : 10} key="waves" />
+        {/* </Fade> */}
 
         {this.props.children()}
       </main>
