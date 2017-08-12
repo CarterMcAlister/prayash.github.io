@@ -1,0 +1,2 @@
+webpackJsonp([0xe5d2915814b89800],{"./node_modules/json-loader/index.js!./.cache/json/blog-origins.json":function(o,n){o.exports={pathContext:{slug:"/blog/origins/"}}}});
+//# sourceMappingURL=path---blog-origins-d689e3834fb1431da211.js.map

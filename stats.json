@@ -81,8 +81,13 @@
       "page-component---src-pages-404-js-ae41f074a8554abb9154.js.map"
     ],
     "app": [
+<<<<<<< HEAD
       "app-64ab4570a06b8ce4bb1e.js",
       "app-64ab4570a06b8ce4bb1e.js.map"
+=======
+      "app-3916111f581573f2d09d.js",
+      "app-3916111f581573f2d09d.js.map"
+>>>>>>> e24dea8a38b4025cda1aec92b80e6ff973fd9f19
     ]
   }
 }
