@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import Link from 'gatsby-link'
+import initReactFastclick from 'react-fastclick'
 
 import '../css/emblem.scss'
 import aboutPic from '../assets/img/about.png'
@@ -8,6 +9,10 @@ import workPic from '../assets/img/work.jpg'
 import blogPic from '../assets/img/blog.jpg'
 
 export default class Emblem extends Component {
+  componentDidMount() {
+    initReactFastclick()
+  }
+
   render() {
     const emblem = (
       <svg
