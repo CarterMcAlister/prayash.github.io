@@ -38,7 +38,7 @@ export default class Emblem extends Component {
           </filter>
 
           <filter x="0" y="0" width="1" height="1" id="blogTextBg">
-            <feFlood floodColor="#DB244B" />
+            <feFlood floodColor="#9B9B9B" />
             <feComposite in="SourceGraphic" />
           </filter>
 
@@ -296,7 +296,7 @@ export default class Emblem extends Component {
             transform="matrix(1 0 0 1 75 135)"
             x="0"
             y="0"
-            style={{ fill: 'rgba(235, 235, 235, 0.56)' }}
+            filter="url(#blogTextBg)"
           >
             &nbsp;blog&nbsp;
           </text>

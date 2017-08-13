@@ -19,7 +19,7 @@ export default class Template extends Component {
       <main className={route === '/' ? 'home' : 'notHome'}>
         <Header breadcrumb={route === '/' ? '' : route} />
 
-        <Waves cameraZoom={route === '/' ? 7 : 10} key="waves" />
+        <Waves cameraZoom={route === '/' ? 5 : 10} key="waves" />
 
         {this.props.children()}
       </main>

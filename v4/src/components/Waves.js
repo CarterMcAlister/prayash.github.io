@@ -44,7 +44,6 @@ export default class Waves extends Component {
   }
 
   _zoom(start, end, duration) {
-    // console.log("Zooming from:", start, "to", end);
     let camZoom = { cameraZoom: start }
     let camZoomTarget = { cameraZoom: end }
     let camTween = new TWEEN.Tween(camZoom)
