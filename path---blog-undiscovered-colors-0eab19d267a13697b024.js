@@ -1,2 +1,0 @@
-webpackJsonp([0x9faf85cd3a259800],{"./node_modules/json-loader/index.js!./.cache/json/blog-undiscovered-colors.json":function(o,e){o.exports={pathContext:{slug:"/blog/undiscovered-colors/"}}}});
-//# sourceMappingURL=path---blog-undiscovered-colors-0eab19d267a13697b024.js.map
