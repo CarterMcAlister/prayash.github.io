@@ -19,8 +19,9 @@ class BlogPostTemplate extends React.Component {
   }
 
   render() {
-    const { markdownRemark: post } = this.props.data
-    const { frontmatter } = post
+    let { markdownRemark: post } = this.props.data
+    let { frontmatter } = post
+
     return (
       <section className="content">
         <Helmet

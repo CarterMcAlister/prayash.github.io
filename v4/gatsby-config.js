@@ -28,28 +28,27 @@ module.exports = {
         path: `${__dirname}/src/assets/images/`
       }
     },
-    // {
-    //   resolve: `gatsby-transformer-remark`,
-    //   options: {
-    //     plugins: [
-    //       {
-    //         resolve: `gatsby-remark-images`,
-    //         options: {
-    //           maxWidth: 690
-    //         }
-    //       },
-    //       `gatsby-remark-prismjs`,
-    //       `gatsby-remark-copy-linked-files`,
-    //       `gatsby-remark-smartypants`
-    //     ]
-    //   }
-    // },
+    {
+      resolve: `gatsby-transformer-remark`,
+      options: {
+        plugins: [
+          {
+            resolve: `gatsby-remark-images`,
+            options: {
+              maxWidth: 690
+            }
+          },
+          `gatsby-remark-prismjs`,
+          `gatsby-remark-copy-linked-files`,
+          `gatsby-remark-smartypants`
+        ]
+      }
+    },
     'gatsby-plugin-react-helmet',
     'gatsby-transformer-json',
     'gatsby-transformer-yaml',
     'gatsby-plugin-sharp',
     'gatsby-transformer-sharp',
-    'gatsby-transformer-remark',
     'gatsby-plugin-offline',
     'gatsby-plugin-emotion',
     'gatsby-plugin-react-next',
