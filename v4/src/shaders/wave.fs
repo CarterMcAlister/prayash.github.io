@@ -15,7 +15,7 @@ vec3 hsv2rgb(vec3 c) {
 
 void main() {
     float now = clamp((time - delay) / duration, 0.0, 1.0);
-    float opacity = (1.0 - length(vPosition.xy / vec2(512.0))) * now * 1.5;
+    float opacity = (1.0 - length(vPosition.xy / vec2(512.0)));
 
     vec3 v = normalize(vPosition);
     vec3 rgb = hsv2rgb(vec3(220.55, 0.58, 0.96));
