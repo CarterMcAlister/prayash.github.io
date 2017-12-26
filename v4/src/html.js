@@ -34,11 +34,11 @@ export default class HTML extends React.Component {
           <meta name="author" content="Prayash Thapa" />
 
           <meta name="twitter:card" content="summary_large_image" />
-          <meta name="twitter:creator" content="@iameffulgence" />
+          <meta name="twitter:creator" content="@_prayash" />
 
           <meta property="fb:app_id" content="532441146961582" />
-          <meta property="og:url" content={`http://effulgence.io`} />
-          <meta property="og:site_name" content="effulgence // prayash thapa" />
+          <meta property="og:url" content={`http://prayash.io`} />
+          <meta property="og:site_name" content="prayash thapa" />
           {this.props.headComponents}
           {css}
         </head>

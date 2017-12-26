@@ -1,6 +1,6 @@
 module.exports = {
   siteMetadata: {
-    title: 'effulgence.io // prayash thapa'
+    title: 'prayash thapa'
   },
   mapping: {
     'MarkdownRemark.frontmatter.author': 'AuthorsYaml'
