@@ -1,8 +1,8 @@
 {
   "assetsByChunkName": {
     "path---blog-software-development": [
-      "path---blog-software-development-0ab53845f11da4b11ef2.js",
-      "path---blog-software-development-0ab53845f11da4b11ef2.js.map"
+      "path---blog-software-development-80636fa8f44dd23ae80b.js",
+      "path---blog-software-development-80636fa8f44dd23ae80b.js.map"
     ],
     "component---src-pages-work-js": [
       "component---src-pages-work-js-c351c6a1ca084201dbf2.js",
@@ -21,12 +21,12 @@
       "path---blog-gatsby-webgl-33455f3690e41f4882b5.js.map"
     ],
     "path---blog": [
-      "path---blog-6c2d3d3b576869f614ba.js",
-      "path---blog-6c2d3d3b576869f614ba.js.map"
+      "path---blog-00199b7f7662d6a7e2e9.js",
+      "path---blog-00199b7f7662d6a7e2e9.js.map"
     ],
     "path---blog-evolution-of-effulgence": [
-      "path---blog-evolution-of-effulgence-6f9881c4f1ece6633aae.js",
-      "path---blog-evolution-of-effulgence-6f9881c4f1ece6633aae.js.map"
+      "path---blog-evolution-of-effulgence-6fae8c6bda2238ab52f3.js",
+      "path---blog-evolution-of-effulgence-6fae8c6bda2238ab52f3.js.map"
     ],
     "path---": [
       "path----557518bd178906f8d58a.js",
@@ -45,8 +45,8 @@
       "path---index-de27b1d4adb00ef22826.js.map"
     ],
     "component---src-pages-blog-index-js": [
-      "component---src-pages-blog-index-js-af3f38589351f9a919cc.js",
-      "component---src-pages-blog-index-js-af3f38589351f9a919cc.js.map"
+      "component---src-pages-blog-index-js-91f42b6ac2ff1f9b38ba.js",
+      "component---src-pages-blog-index-js-91f42b6ac2ff1f9b38ba.js.map"
     ],
     "component---src-pages-404-js": [
       "component---src-pages-404-js-98d33e62ecaea5947486.js",
@@ -57,16 +57,16 @@
       "commons-5607aeea2faeac945353.js.map"
     ],
     "path---blog-undiscovered-colors": [
-      "path---blog-undiscovered-colors-8698d35a5a755cd03285.js",
-      "path---blog-undiscovered-colors-8698d35a5a755cd03285.js.map"
+      "path---blog-undiscovered-colors-467c763244fac532453d.js",
+      "path---blog-undiscovered-colors-467c763244fac532453d.js.map"
     ],
     "path---404-html": [
       "path---404-html-a0e39f21c11f6a62c5ab.js",
       "path---404-html-a0e39f21c11f6a62c5ab.js.map"
     ],
     "component---src-templates-blog-post-template-js": [
-      "component---src-templates-blog-post-template-js-249f4e5f875f97ed60d5.js",
-      "component---src-templates-blog-post-template-js-249f4e5f875f97ed60d5.js.map"
+      "component---src-templates-blog-post-template-js-039b001040b71dff96b0.js",
+      "component---src-templates-blog-post-template-js-039b001040b71dff96b0.js.map"
     ],
     "path---music": [
       "path---music-a0e39f21c11f6a62c5ab.js",
@@ -81,12 +81,12 @@
       "path---offline-plugin-app-shell-fallback-a0e39f21c11f6a62c5ab.js.map"
     ],
     "app": [
-      "app-12ecbdfdec5ce59d41a4.js",
-      "app-12ecbdfdec5ce59d41a4.js.map"
+      "app-cd410ed9270c5613acb1.js",
+      "app-cd410ed9270c5613acb1.js.map"
     ],
     "path---blog-origins": [
-      "path---blog-origins-13d0ae77fd7eccedac2d.js",
-      "path---blog-origins-13d0ae77fd7eccedac2d.js.map"
+      "path---blog-origins-7ed2a90ef5d5ef6f3406.js",
+      "path---blog-origins-7ed2a90ef5d5ef6f3406.js.map"
     ],
     "path---404": [
       "path---404-a0e39f21c11f6a62c5ab.js",
@@ -97,12 +97,12 @@
       "component---src-pages-about-js-56048106188f4643f49c.js.map"
     ],
     "path---blog-creative-coding": [
-      "path---blog-creative-coding-065306f4c663a1e7543b.js",
-      "path---blog-creative-coding-065306f4c663a1e7543b.js.map"
+      "path---blog-creative-coding-6dec41cdd9401c1ca30a.js",
+      "path---blog-creative-coding-6dec41cdd9401c1ca30a.js.map"
     ],
     "path---blog-on-creativity": [
-      "path---blog-on-creativity-42f59d9ac9f5f585179a.js",
-      "path---blog-on-creativity-42f59d9ac9f5f585179a.js.map"
+      "path---blog-on-creativity-2d8645eb8178233be798.js",
+      "path---blog-on-creativity-2d8645eb8178233be798.js.map"
     ],
     "path---about": [
       "path---about-3d2dd3e0755724152a99.js",

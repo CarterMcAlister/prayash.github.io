@@ -1,2 +1,2 @@
-webpackJsonp([0x81b8806e4260],{339:function(e,t){e.exports={data:{allContentJson:{edges:[{node:{index:{title:"effulgence.io // prayash thapa",subtitle:"Welcome"}}}]}},pathContext:{}}}});
+webpackJsonp([0x81b8806e4260],{338:function(e,t){e.exports={data:{allContentJson:{edges:[{node:{index:{title:"effulgence.io // prayash thapa",subtitle:"Welcome"}}}]}},pathContext:{}}}});
 //# sourceMappingURL=path---index-de27b1d4adb00ef22826.js.map
