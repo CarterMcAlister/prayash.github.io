@@ -1,6 +1,6 @@
 ---
 title: "Undiscovered Colors"
-date: 11/28/2016
+date: 2016-11-28
 description: "A memoir to a brief excursion in Argentina."
 draft: true
 ---

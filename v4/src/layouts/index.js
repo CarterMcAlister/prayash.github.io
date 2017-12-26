@@ -1,25 +1,22 @@
-import React, { Component } from 'react'
+import React from 'react'
 import PropTypes from 'prop-types'
-import Link from 'gatsby-link'
-
-import Header from '../components/Header'
-import Waves from '../components/Waves'
-import '../css/typography.css'
+import Header from '../components/header'
+import GLView from '../components/gl-view'
 import '../css/index.scss'
 
-export default class Template extends Component {
+export default class Layout extends React.Component {
   static propTypes = {
-    children: PropTypes.func
+    children: PropTypes.func.isRequired
   }
 
   render() {
-    const route = this.props.location.pathname
+    let route = this.props.location.pathname
 
     return (
       <main className={route === '/' ? 'home' : 'notHome'}>
         <Header breadcrumb={route === '/' ? '' : route} />
 
-        <Waves cameraZoom={route === '/' ? 5 : 10} key="waves" />
+        <GLView zoom={1} />
 
         {this.props.children()}
       </main>

@@ -1,67 +1,87 @@
+const parseFilepath = require('parse-filepath')
 const path = require('path')
+const slash = require('slash')
+
+exports.modifyWebpackConfig = ({ config, stage }) => {
+  let glslifyFiles = /\.(glsl|frag|vert|vs|fs)$/
+
+  switch (stage) {
+    case 'develop':
+      config.loader('glslify', {
+        test: glslifyFiles,
+        loaders: ['raw', 'glslify']
+      })
+
+      break
+
+    case 'build-css':
+      break
+
+    case 'build-html':
+      config.loader('glslify', {
+        test: glslifyFiles,
+        loaders: ['raw', 'glslify']
+      })
+      break
+
+    case 'build-javascript':
+      config.loader('glslify', {
+        test: glslifyFiles,
+        loaders: ['raw', 'glslify']
+      })
+
+      break
+  }
+
+  return config
+}
 
 exports.onCreateNode = ({ node, boundActionCreators, getNode }) => {
-  const { createNodeField } = boundActionCreators
-  let slug
+  let { createNodeField } = boundActionCreators
+  if (node.internal.type === 'MarkdownRemark') {
+    let fileNode = getNode(node.parent)
+    let parsedFilePath = parseFilepath(fileNode.relativePath)
+    let slug = `/${parsedFilePath.dir}`
 
-  if (node.internal.type === `MarkdownRemark`) {
-    const fileNode = getNode(node.parent)
-    const parsedFilePath = path.parse(fileNode.relativePath)
-
-    if (parsedFilePath.name !== `index` && parsedFilePath.dir !== ``) {
-      slug = `/${parsedFilePath.dir}/${parsedFilePath.name}/`
-    } else if (parsedFilePath.dir === ``) {
-      slug = `/${parsedFilePath.name}/`
-    } else {
-      slug = `/${parsedFilePath.dir}/`
-    }
-
-    // Add slug as a field on the node.
-    createNodeField({ node, name: `slug`, value: slug })
+    createNodeField({ node, name: 'slug', value: slug })
   }
 }
 
 exports.createPages = ({ graphql, boundActionCreators }) => {
-  const { createPage } = boundActionCreators
+  let { createPage } = boundActionCreators
 
   return new Promise((resolve, reject) => {
-    const pages = []
-    const blogPost = path.resolve('src/templates/blog-post.js')
+    const blogPostTemplate = path.resolve('src/templates/blog-post-template.js')
 
-    // Query for all markdown "nodes" and for the slug we previously created.
     resolve(
       graphql(
         `
-        {
-          allMarkdownRemark {
-            edges {
-              node {
-                fields {
-                  slug
+          {
+            allMarkdownRemark {
+              edges {
+                node {
+                  fields {
+                    slug
+                  }
                 }
               }
             }
           }
-        }
-      `
+        `
       ).then(result => {
-        if (result.errors) {
-          console.log(result.errors)
-          reject(result.errors)
+        if (result.error) {
+          reject(result.error)
         }
 
-        // Create blog posts pages.
         result.data.allMarkdownRemark.edges.forEach(edge => {
           createPage({
-            path: edge.node.fields.slug, // required
-            component: blogPost,
+            path: `${edge.node.fields.slug}`,
+            component: slash(blogPostTemplate),
             context: {
               slug: edge.node.fields.slug
             }
           })
         })
-
-        return
       })
     )
   })

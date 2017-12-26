@@ -1,6 +1,6 @@
 ---
 title: On Creativity
-date: 11/28/2016
+date: 2016-11-29
 description: "The journey from beginner to amateur."
 draft: true
 ---

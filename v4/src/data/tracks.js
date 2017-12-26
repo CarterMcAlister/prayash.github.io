@@ -1,4 +1,4 @@
-var tracks = [
+const tracks = [
   {
     kind: 'track',
     id: 274242735,

@@ -1,11 +1,11 @@
 import React from 'react'
 import { ShareButtons, generateShareIcon } from 'react-share'
 
-const { FacebookShareButton, TwitterShareButton } = ShareButtons
-const FacebookIcon = generateShareIcon('facebook')
-const TwitterIcon = generateShareIcon('twitter')
+let { FacebookShareButton, TwitterShareButton } = ShareButtons
+let FacebookIcon = generateShareIcon('facebook')
+let TwitterIcon = generateShareIcon('twitter')
 
-const TweetThis = props =>
+const TweetThis = props => (
   <TwitterShareButton
     url={`http://effulgence.io{props.path}`}
     title={props.title}
@@ -14,14 +14,16 @@ const TweetThis = props =>
   >
     <TwitterIcon round size={32} />
   </TwitterShareButton>
+)
 
-const FacebookShare = props =>
+const FacebookShare = props => (
   <FacebookShareButton
     url={`http://effulgence.io${props.path}`}
-    title={props.title}
+    quote={props.title}
     className={'share-icons'}
   >
     <FacebookIcon round size={32} />
   </FacebookShareButton>
+)
 
 export { TweetThis, FacebookShare }

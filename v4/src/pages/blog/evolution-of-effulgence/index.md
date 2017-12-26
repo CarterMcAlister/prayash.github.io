@@ -1,6 +1,6 @@
 ---
 title: Evolution of effulgence.io
-date: February 22, 2017
+date: 2017-02-22
 description: "A short overview of how I built this site."
 draft: false
 ---

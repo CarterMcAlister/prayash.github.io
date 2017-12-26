@@ -6,48 +6,49 @@
   "bugs": {
     "url": "https://github.com/prayasht/prayasht.github.io/issues"
   },
-  "dependencies": {
-    "classnames": "^2.2.5",
-    "gatsby": "^1.2.0",
-    "gatsby-link": "^1.0.9",
-    "gatsby-plugin-react-helmet": "^1.0.1",
-    "gatsby-plugin-sass": "^1.0.1",
-    "gatsby-plugin-sharp": "^1.0.0-beta.7",
-    "gatsby-remark-copy-linked-files": "^1.0.0-beta.6",
-    "gatsby-remark-images": "^1.0.0-beta.6",
-    "gatsby-remark-prismjs": "^1.0.0-beta.6",
-    "gatsby-remark-responsive-iframe": "^1.0.0-beta.6",
-    "gatsby-remark-smartypants": "^1.0.0-beta.6",
-    "gatsby-source-filesystem": "^1.0.0-beta.6",
-    "gatsby-transformer-remark": "^1.0.0-beta.6",
-    "react-fastclick": "^3.0.2",
-    "react-share": "^1.15.0",
-    "react-youtube": "^7.4.0",
-    "three": "^0.86.0",
-    "tween.js": "^16.6.0"
-  },
-  "devDependencies": {
-    "gh-pages": "^0.12.0"
-  },
-  "keywords": [
-    "effulgence",
-    "prayash thapa",
-    "portfolio",
-    "blog",
-    "gatsby",
-    "react"
-  ],
   "license": "MIT",
-  "main": "n/a",
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/prayasht/prayasht.github.io"
+  "dependencies": {
+    "babel-plugin-glslify": "^2.0.0",
+    "classnames": "^2.2.5",
+    "emotion": "^8.0.8",
+    "emotion-server": "^8.0.8",
+    "feather-icons": "^3.3.0",
+    "gatsby": "^1.9.76",
+    "gatsby-image": "^1.0.13",
+    "gatsby-link": "^1.6.21",
+    "gatsby-plugin-emotion": "^1.1.8",
+    "gatsby-plugin-google-analytics": "^1.0.10",
+    "gatsby-plugin-offline": "^1.0.10",
+    "gatsby-plugin-react-helmet": "^1.0.8",
+    "gatsby-plugin-react-next": "^1.0.4",
+    "gatsby-plugin-sass": "^1.0.12",
+    "gatsby-plugin-sharp": "^1.6.9",
+    "gatsby-remark-copy-linked-files": "^1.5.16",
+    "gatsby-remark-images": "^1.5.30",
+    "gatsby-remark-prismjs": "^1.2.9",
+    "gatsby-remark-smartypants": "^1.4.8",
+    "gatsby-source-filesystem": "^1.5.5",
+    "gatsby-transformer-json": "^1.0.11",
+    "gatsby-transformer-remark": "^1.7.17",
+    "gatsby-transformer-sharp": "^1.6.10",
+    "gatsby-transformer-yaml": "^1.5.11",
+    "glsl-noise": "^0.0.0",
+    "glsl-util": "git://github.com/ykob/glsl-util.git",
+    "glslify": "^6.1.0",
+    "glslify-loader": "^1.0.2",
+    "normalize.css": "^7.0.0",
+    "prop-types": "^15.6.0",
+    "raw-loader": "^0.5.1",
+    "react-delay": "^0.1.0",
+    "react-emotion": "^8.0.8",
+    "react-helmet": "^5.2.0",
+    "react-share": "^1.16.0",
+    "react-youtube": "^7.5.0",
+    "styled-system": "^1.0.8",
+    "three": "^0.89.0"
   },
   "scripts": {
-    "build": "gatsby build",
-    "deploy": "gatsby build --prefix-paths && gh-pages -d public",
-    "start": "gatsby develop --open",
-    "format": "prettier --trailing-comma es5 --no-semi --single-quote --write \"pages/*.js\" \"utils/*.js\" \"wrappers/*.js\" \"html.js\"",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node_modules/.bin/gatsby develop --open",
+    "build": "node_modules/.bin/gatsby build"
   }
 }
