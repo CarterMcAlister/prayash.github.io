@@ -2,7 +2,7 @@
 title: "2017: A Year in Review"
 date: 2017-12-25
 description: "Looking back at a year of turmoil, uncertainty, and stability."
-draft: false
+draft: true
 ---
 
 2017 turned out to be quite the year for me. Lots of big changes, and lots of attempts at living a more balanced, artful life. After spending five years at CU Boulder, I'm happy to finally be done with school forever. Academia was never my forte, and I was anxious to be done with it all. Looking back, I kinda miss those days.. and it hasn't even been 6 months. But you always miss the days when they're gone. It's hard to appreciate the good times while you're living them.
