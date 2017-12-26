@@ -49,6 +49,6 @@
   },
   "scripts": {
     "start": "node_modules/.bin/gatsby develop --open",
-    "build": "node_modules/.bin/gatsby build"
+    "build": "node_modules/.bin/gatsby build && cp src/pages/CNAME public/"
   }
 }
