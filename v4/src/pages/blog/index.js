@@ -1,65 +1,71 @@
 import React from 'react'
-import ReactDOM from 'react-dom'
 import Helmet from 'react-helmet'
 import Link from 'gatsby-link'
+import { css } from 'react-emotion'
 import '../../css/blog.scss'
 
-export default class BlogPostsIndex extends React.Component {
-  componentDidMount() {
-    this.fadeIn()
-  }
+let listStyle = css`
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+`
 
-  fadeIn() {
-    let elem = ReactDOM.findDOMNode(this)
+const BlogIndex = ({ data }) => {
+  let { edges: posts } = data.allMarkdownRemark
+  return (
+    // <Box bg={colors.primary}>
+    //   <Box
+    //     width={[1, 1, 1 / 2]}
+    //     m={['3.5rem 0 0 0', '3.5rem 0 0 0', '3.5rem auto 0 auto']}
+    //     px={[3, 3, 0]}
+    //     color={colors.secondary}
+    //   >
+    <section className="content">
+      <Helmet title="effulgence // blog" />
 
-    elem.style.opacity = 0
-    window.requestAnimationFrame(() => {
-      elem.style.transition = 'opacity 1000ms ease-out'
-      elem.style.opacity = 1
-    })
-  }
-
-  render() {
-    const blogPosts = this.props.data.allMarkdownRemark.edges
-      .map(edge => edge.node)
-      .reverse()
-
-    return (
-      <section className="content">
-        <Helmet title="effulgence // blog" />
-
-        <div id="blog" className="fade">
-          {blogPosts.map((post, index) => {
-            const { fields, frontmatter } = post
+      <div id="blog" className="fade">
+        {posts
+          .filter(post => post.node.frontmatter.title.length > 0)
+          .map(({ node: post }, index) => {
+            let { fields, frontmatter } = post
 
             return (
               <div
                 className={'blog-post ' + (index === 0 ? 'first' : '')}
-                key={fields.slug}
+                key={post.id}
               >
-                <time dateTime={frontmatter.date}>
-                  {frontmatter.date}
-                </time>
+                <time dateTime={frontmatter.date}>{post.frontmatter.date}</time>
                 <h2>
-                  <Link to={fields.slug}>
-                    {frontmatter.title}
-                  </Link>
+                  <Link to={post.fields.slug}>{post.frontmatter.title}</Link>
                 </h2>
 
-                <p>
-                  {frontmatter.description}
-                </p>
+                <p>{post.frontmatter.description}</p>
               </div>
             )
           })}
-        </div>
-      </section>
-    )
-  }
+      </div>
+    </section>
+    // <ul className={listStyle}>
+    //   {posts
+    //     .filter(post => post.node.frontmatter.title.length > 0)
+    //     .map(({ node: post }, index) => {
+    //       return (
+    //         <li key={post.id}>
+    //           <Link to={post.fields.slug}>
+    //             <h3>{post.frontmatter.title}</h3>
+    //           </Link>
+    //           <p>{post.excerpt}</p>
+    //         </li>
+    //       )
+    //     })}
+    // </ul>
+    //   </Box>
+    // </Box>
+  )
 }
 
 export const pageQuery = graphql`
-  query BlogPostsIndexQuery {
+  query BlogQuery {
     allMarkdownRemark(
       sort: { order: DESC, fields: [frontmatter___date] }
       filter: {
@@ -69,17 +75,20 @@ export const pageQuery = graphql`
     ) {
       edges {
         node {
-          excerpt
-          fields {
-            slug
-          }
+          excerpt(pruneLength: 250)
+          id
           frontmatter {
             title
-            date
+            date(formatString: "MMMM DD, YYYY")
             description
+          }
+          fields {
+            slug
           }
         }
       }
     }
   }
 `
+
+export default BlogIndex

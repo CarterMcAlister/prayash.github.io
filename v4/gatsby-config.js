@@ -1,14 +1,12 @@
 module.exports = {
-  pathPrefix: '/',
   siteMetadata: {
-    title: 'effulgence // prayash thapa',
-    author: 'Prayash Thapa <prayasht@gmail.com>',
-    description:
-      "Hi, I'm Prayash. I make music and write code that draws things."
+    title: 'effulgence.io // prayash thapa'
+  },
+  mapping: {
+    'MarkdownRemark.frontmatter.author': 'AuthorsYaml'
   },
   plugins: [
-    'gatsby-plugin-react-helmet',
-    'gatsby-plugin-sass',
+    // Adding various source folders to the GraphQL layer.
     {
       resolve: `gatsby-source-filesystem`,
       options: {
@@ -17,24 +15,44 @@ module.exports = {
       }
     },
     {
-      resolve: `gatsby-transformer-remark`,
+      resolve: `gatsby-source-filesystem`,
       options: {
-        plugins: [
-          {
-            resolve: `gatsby-remark-images`,
-            options: {
-              maxWidth: 690
-            }
-          },
-          {
-            resolve: `gatsby-remark-responsive-iframe`
-          },
-          `gatsby-remark-prismjs`,
-          `gatsby-remark-copy-linked-files`,
-          `gatsby-remark-smartypants`
-        ]
+        name: `data`,
+        path: `${__dirname}/src/data/`
       }
     },
-    `gatsby-plugin-sharp`
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `images`,
+        path: `${__dirname}/src/assets/images/`
+      }
+    },
+    // {
+    //   resolve: `gatsby-transformer-remark`,
+    //   options: {
+    //     plugins: [
+    //       {
+    //         resolve: `gatsby-remark-images`,
+    //         options: {
+    //           maxWidth: 690
+    //         }
+    //       },
+    //       `gatsby-remark-prismjs`,
+    //       `gatsby-remark-copy-linked-files`,
+    //       `gatsby-remark-smartypants`
+    //     ]
+    //   }
+    // },
+    'gatsby-plugin-react-helmet',
+    'gatsby-transformer-json',
+    'gatsby-transformer-yaml',
+    'gatsby-plugin-sharp',
+    'gatsby-transformer-sharp',
+    'gatsby-transformer-remark',
+    'gatsby-plugin-offline',
+    'gatsby-plugin-emotion',
+    'gatsby-plugin-react-next',
+    'gatsby-plugin-sass'
   ]
 }

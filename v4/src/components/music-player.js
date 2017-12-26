@@ -1,16 +1,15 @@
 import React, { Component } from 'react'
 import classnames from 'classnames'
 import YouTube from 'react-youtube'
-
+import Delay from 'react-delay'
+import tracks from '../data/tracks'
 import '../css/player.scss'
-import Delay from './Delay'
-import tracks from '../utils/tracks'
 var sc
 
 const CLIENT_ID = 'a364360d3c9782e360e4759ce0424007'
 let track
 
-class Player extends Component {
+class MusicPlayer extends Component {
   state = {
     active: this.props.songs[0],
     current: 0,
@@ -21,7 +20,7 @@ class Player extends Component {
 
   fetch = () => {
     // sc = require('soundcloud')
-    const superfluousText = 'Effulgence & Immensus - '
+    let superfluousText = 'Effulgence & Immensus - '
 
     // Disable SC API calls for now.
     // sc.initialize({ client_id: CLIENT_ID });
@@ -29,8 +28,7 @@ class Player extends Component {
     // console.log(tracks);
     let fetchedTracks = []
     tracks.forEach(t => {
-      // console.log(t);
-      let url = t.stream_url + '?client_id=' + CLIENT_ID
+      let url = `${t.stream_url}?client_id=${CLIENT_ID}`
       let cover = t.artwork_url.replace('large', 't300x300')
       let trackName = t.title
 
@@ -133,7 +131,7 @@ class Player extends Component {
   }
 
   render() {
-    const { active, play, progress, songs } = this.state
+    let { active, play, progress, songs } = this.state
 
     let playPauseClass = classnames(
       'fa',
@@ -141,23 +139,19 @@ class Player extends Component {
       { 'fa-play': !play }
     )
 
-    const tracks = songs.map((track, index) =>
+    let tracks = songs.map((track, index) => (
       <li
         className="track"
         key={track.artist.song.toString()}
         onClick={() => this._handleClick(index)}
       >
         <i className="fa fa-play" aria-hidden="true" />
-        <div className="trackIndex">
-          {index + 1}
-        </div>
-        <div className="trackName">
-          {track.artist.song}
-        </div>
+        <div className="trackIndex">{index + 1}</div>
+        <div className="trackName">{track.artist.song}</div>
       </li>
-    )
+    ))
 
-    const opts = {
+    let opts = {
       width: '320',
       height: '195',
       playerVars: {
@@ -175,7 +169,6 @@ class Player extends Component {
             preload="auto"
             ref="player"
           />
-
           <div className="platforms">
             <ul>
               <li className="spotify">
@@ -215,7 +208,6 @@ class Player extends Component {
               </li>
             </ul>
           </div>
-
           <div className="media">
             {/* Info Pane */}
             <div className="pane-info">
@@ -224,13 +216,9 @@ class Player extends Component {
 
               {/* Now Playing */}
               <div className="artist-info">
-                <h3 className="artist-song-name">
-                  {active.artist.song}
-                </h3>
+                <h3 className="artist-song-name">{active.artist.song}</h3>
                 <br />
-                <h2 className="artist-name">
-                  {active.artist.name}
-                </h2>
+                <h2 className="artist-name">{active.artist.name}</h2>
               </div>
 
               {/* Player Controls */}
@@ -263,12 +251,9 @@ class Player extends Component {
 
             {/* Tracklist Pane */}
             <div className="pane-tracklist">
-              <ul className="list">
-                {tracks}
-              </ul>
+              <ul className="list">{tracks}</ul>
             </div>
           </div>
-
           <div className="yt-container">
             <div className="video">
               <Delay wait={1500}>
@@ -287,17 +272,19 @@ class Player extends Component {
                 <YouTube videoId="CPMwYzgbtH8" opts={opts} />
               </Delay>
             </div>
+          </div>{' '}
+          <div className="progress-container" onClick={this.setProgress}>
+            <span
+              className="progress-value"
+              style={{
+                width: progress + '%'
+              }}
+            />
           </div>
-
-          {/* <div className="progress-container" onClick={this.setProgress}>
-            <span className="progress-value" style={{
-              width: progress + '%'
-            }}></span>
-          </div> */}
         </div>
       </div>
     )
   }
 }
 
-export default Player
+export default MusicPlayer

@@ -1,10 +1,30 @@
 import React from 'react'
 import Link from 'gatsby-link'
 import Helmet from 'react-helmet'
-import Emblem from '../components/Emblem'
+import Emblem from '../components/emblem'
 
-export default class Index extends React.Component {
-  render() {
-    return <Emblem />
-  }
+export default ({ data }) => {
+  let myData = data.allContentJson.edges[0].node.index
+
+  return (
+    <section>
+      <Helmet title="effulgence // prayash thapa" />
+      <Emblem />
+    </section>
+  )
 }
+
+export const pageQuery = graphql`
+  query contentQuery {
+    allContentJson {
+      edges {
+        node {
+          index {
+            title
+            subtitle
+          }
+        }
+      }
+    }
+  }
+`

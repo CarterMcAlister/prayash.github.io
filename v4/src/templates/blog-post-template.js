@@ -2,7 +2,6 @@ import React from 'react'
 import ReactDOM from 'react-dom'
 import Helmet from 'react-helmet'
 import { TweetThis, FacebookShare } from '../components/Social'
-// import ReadNext from '../components/ReadNext'
 
 class BlogPostTemplate extends React.Component {
   componentDidMount() {
@@ -20,9 +19,8 @@ class BlogPostTemplate extends React.Component {
   }
 
   render() {
-    const post = this.props.data.markdownRemark
+    const { markdownRemark: post } = this.props.data
     const { frontmatter } = post
-
     return (
       <section className="content">
         <Helmet
@@ -45,9 +43,7 @@ class BlogPostTemplate extends React.Component {
         />
         <article id="blog-body" className="fade">
           <header className="blog-header">
-            <h2>
-              {frontmatter.title}
-            </h2>
+            <h2>{frontmatter.title}</h2>
           </header>
           <div
             className="post-content"
@@ -67,26 +63,23 @@ class BlogPostTemplate extends React.Component {
               />
             </li>
           </ul>
-          {/* <ReadNext posts={nextPosts} /> */}
-          {/* <hr /> */}
-          {/* <About /> */}
         </aside>
       </section>
     )
   }
 }
 
-export default BlogPostTemplate
-
 export const pageQuery = graphql`
-  query BlogPostBySlug($slug: String!) {
+  query BlogPostByPath($slug: String!) {
     markdownRemark(fields: { slug: { eq: $slug } }) {
       html
+      timeToRead
       frontmatter {
+        date(formatString: "MMMM DD, YYYY")
         title
-        date
-        description
       }
     }
   }
 `
+
+export default BlogPostTemplate

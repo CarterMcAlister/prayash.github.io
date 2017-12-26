@@ -1,5 +1,5 @@
 #player {
-  margin-top: 2em;
+  padding-top: 2em;
 
   canvas {
     position: relative !important;
@@ -7,10 +7,9 @@
   }
 
   .container {
-    width: 98.75%;
     margin: 0 auto;
-    overflow: hidden;
     margin-bottom: 1em;
+    overflow: hidden;
   }
 
   .platforms {
@@ -32,7 +31,9 @@
         border-bottom: 2px rgba(0, 0, 0, 0) solid;
         a:hover {
           // border-bottom: 2px #2ebd59 solid;
-          i { color: #2EBD59; }
+          i {
+            color: #2ebd59;
+          }
         }
       }
 
@@ -40,7 +41,9 @@
         border-bottom: 2px rgba(0, 0, 0, 0) solid;
         a:hover {
           // border-bottom: 2px #f50 solid;
-          i { color: #F50; }
+          i {
+            color: #f50;
+          }
         }
       }
 
@@ -48,7 +51,9 @@
         border-bottom: 2px rgba(0, 0, 0, 0) solid;
         a:hover {
           // border-bottom: 2px #f50 solid;
-          i { color: #CC181E; }
+          i {
+            color: #cc181e;
+          }
         }
       }
 
@@ -56,7 +61,9 @@
         border-bottom: 2px rgba(0, 0, 0, 0) solid;
         a:hover {
           // border-bottom: 2px #f50 solid;
-          i { color: #8466FF; }
+          i {
+            color: #8466ff;
+          }
         }
       }
 
@@ -64,7 +71,9 @@
         border-bottom: 2px rgba(0, 0, 0, 0) solid;
         a:hover {
           // border-bottom: 2px #f50 solid;
-          i { color: #848484; }
+          i {
+            color: #848484;
+          }
         }
       }
     }
@@ -74,7 +83,8 @@
     display: flex;
     flex-direction: row;
 
-    .pane-info, .pane-tracklist {
+    .pane-info,
+    .pane-tracklist {
       flex-grow: 1;
     }
   }
@@ -144,8 +154,12 @@
         margin: 0;
       }
 
-      .artist-name { font-weight: normal; }
-      .artist-song-name { font-weight: bold; }
+      .artist-name {
+        font-weight: normal;
+      }
+      .artist-song-name {
+        font-weight: bold;
+      }
     }
 
     .options {
@@ -169,22 +183,29 @@
       flex-direction: column;
 
       li.track {
+        border-bottom: 1px rgba(0, 0, 0, 0.05) solid;
+        display: flex;
+        flex-grow: 1;
+        flex-flow: row nowrap;
+        justify-content: flex-start;
         font-size: 1.15em;
         padding: 1em 1em;
-        border-bottom: 1px rgba(0, 0, 0, 0.05) solid;
-        flex-grow: 1;
 
-        &:hover, :active {
+        &:hover,
+        :active {
           background: rgba(155, 155, 155, 0.1);
 
           .fa {
             display: inline-block;
+            flex: 0.05;
 
             &:hover {
               color: gray;
             }
           }
-          .trackIndex { display: none; }
+          .trackIndex {
+            display: none;
+          }
         }
 
         .fa {
@@ -192,12 +213,11 @@
         }
 
         .trackIndex {
-          display: inline-block;
-          width: 12.94px;
+          flex: 0.05;
         }
 
         .trackName {
-          display: inline-block;
+          flex: 0.95;
           margin-left: 1em;
         }
       }

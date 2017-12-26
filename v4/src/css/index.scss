@@ -1,4 +1,4 @@
-@charset "utf-8";
+@import 'typography';
 
 @custom-selector :--headings h1, h2, h3, h4, h5, h6;
 @custom-selector :--pseudo ::after, ::before;
@@ -23,12 +23,12 @@ section {
 }
 
 @font-face {
-  font-family: "Neuzeit-Book";
+  font-family: 'Neuzeit-Book';
   src: url(../assets/fonts/d741af6b-26f4-4e34-b55d-432ccade3280.woff2)
-      format("woff2"),
+      format('woff2'),
     url(../assets/fonts/77aaeb7b-86f4-47a1-8196-74a660dd0919.woff)
-      format("woff"),
-    url(../assets/fonts/efdf74e6-bfd4-466d-93fd-4f8f4d55b80c.ttf) format("ttf");
+      format('woff'),
+    url(../assets/fonts/efdf74e6-bfd4-466d-93fd-4f8f4d55b80c.ttf) format('ttf');
 }
 
 html {
@@ -52,7 +52,7 @@ body#container {
   line-height: 1.4em;
   font-weight: 400;
   color: #282828;
-  letter-spacing: .02em;
+  letter-spacing: 0.02em;
   background: #ebebeb;
   margin: 0 auto;
   height: 100vh;
@@ -67,7 +67,7 @@ body#container {
     h1 a,
     h2,
     nav a {
-      transition: all ease .7s;
+      transition: all ease 0.7s;
     }
   }
 
@@ -96,7 +96,7 @@ p {
   line-height: 1.4em;
   font-family: Neuzeit-Book, Helvetica Neue, Helvetica, Arial, sans-serif;
   font-weight: 400;
-  letter-spacing: .02em;
+  letter-spacing: 0.02em;
 }
 
 h2 {
@@ -104,7 +104,7 @@ h2 {
 }
 
 h3 {
-  letter-spacing: .06em;
+  letter-spacing: 0.06em;
 }
 
 p {
@@ -182,8 +182,12 @@ header#header {
       font-size: 1.5em;
       font-weight: 500;
       color: #202020;
-      opacity: .66;
+      opacity: 0.66;
       padding: 1em;
+
+      @media only screen and (max-width: 476px) {
+        font-size: 1.25em;
+      }
 
       a {
         position: relative;
@@ -196,7 +200,7 @@ header#header {
       font-size: 1.5em;
       font-weight: 500;
       color: #202020;
-      opacity: .66;
+      opacity: 0.66;
       padding: 1em 0;
     }
   }
@@ -232,7 +236,7 @@ header#header {
       1
     );
     transform: matrix3d(1.65, 0, 0, 0, 0, 1.65, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);
-    opacity: 0.0;
+    opacity: 0;
   }
   5.71% {
     -webkit-transform: matrix3d(
@@ -431,7 +435,7 @@ header#header {
       1
     );
     transform: matrix3d(1.65, 0, 0, 0, 0, 1.65, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);
-    opacity: 0.0;
+    opacity: 0;
   }
   5.71% {
     -webkit-transform: matrix3d(
@@ -621,7 +625,7 @@ header#header {
 
 @-webkit-keyframes fade {
   0% {
-    opacity: 0.0;
+    opacity: 0;
   }
   100% {
     opacity: 1;
@@ -630,7 +634,7 @@ header#header {
 
 @keyframes fade {
   0% {
-    opacity: 0.0;
+    opacity: 0;
   }
   100% {
     opacity: 1;
