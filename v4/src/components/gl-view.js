@@ -3,14 +3,15 @@ import * as THREE from 'three'
 import GLGradient from './gl-gradient'
 import GLWave from './gl-wave'
 
-let camera, scene, renderer, controls
-
 export default class GLView extends Component {
-  componentDidMount = () => {
-    // this.view = new GLGradient()
-    this.view = new GLWave()
+  constructor(props) {
+    super(props)
 
+    this.view = new GLWave()
     this.clock = new THREE.Clock()
+  }
+
+  componentDidMount = () => {
     this.setupCamera()
     this.setupRenderer()
     this.setupScene()
@@ -29,8 +30,6 @@ export default class GLView extends Component {
       10,
       10000
     )
-
-    this.camera.position.z = 800
   }
 
   setupRenderer = () => {
@@ -39,14 +38,14 @@ export default class GLView extends Component {
     this.renderer = new THREE.WebGLRenderer({
       alpha: false,
       antialias: false,
+      canvas: document.querySelector('canvas'),
       clearAlpha: 0.25,
       preserveDrawingBuffer: false
     })
 
     this.renderer.setClearColor(0xebebeb)
-    this.renderer.setPixelRatio(Math.min(1.75, window.devicePixelRatio))
+    this.renderer.setPixelRatio(Math.min(1.0, window.devicePixelRatio))
     this.renderer.setSize(width, height)
-    this.refs.container.appendChild(this.renderer.domElement)
   }
 
   setupScene = () => {
@@ -73,6 +72,6 @@ export default class GLView extends Component {
   }
 
   render() {
-    return <div id="glView" ref="container" className="slow-fade" />
+    return <canvas id="gl-view" className="slow-fade" />
   }
 }

@@ -1,7 +1,7 @@
 ---
-title: Making of prayash.io
+title: Making of
 date: 2017-02-22
-description: "A short overview of how I built this site."
+description: "A short technical overview of how I built this site."
 draft: false
 ---
 
@@ -32,7 +32,7 @@ v2 gave me a much clearer direction as to where I wanted my site to go. I was ha
 
 I considered using Jekyll (a static site/blog generator), but I REALLY wanted the single page design to work. I did not want the page to refresh every time the user navigated to another page on the site. I wanted it to be a unified, cohesive experience from one part of the site to another, no jitters and no refreshes. The Web has come so far, why not utilize it to its fullest?
 
-After a lot of research, I ran into an awesome new framework called [gatsby.js](https://github.com/gatsbyjs/gatsby), a static site generator that transforms plain text into dynamic blogs and websites using React (an amazing library that lets you create functional UIs). It has no page reloads, supports global page transitions, and leverages server-side rendering so all the components are rendered into raw markup for production builds. You mean I can blog, create a static site, and embed all the interactivity I want without having to compromise the user experience? I'll take it.
+After a lot of research, I ran into an awesome new framework called [gatsby.js](https://www.gatsbyjs.org/), a static site generator that transforms plain text into dynamic blogs and websites using React (an amazing library that lets you create functional UIs). It has no page reloads, supports global page transitions, and leverages server-side rendering so all the components are rendered into raw markup for production builds. You mean I can blog, create a static site, and embed all the interactivity I want without having to compromise the user experience? I'll take it.
 
 Finally, we arrive at v3:
 

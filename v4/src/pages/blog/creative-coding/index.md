@@ -66,8 +66,8 @@ Creative coding the practice of writing software for the sake of art. That may b
 * [Active Theory](http://activetheory.net)
 * Ben Fry
 * Cabbibo
-* Cacheflowe
-* Casey Reas
+* [Cacheflowe](http://cacheflowe.com)
+* [Casey Reas](http://reas.com)
 * [Felix Turner](https://www.airtightinteractive.com/splash/)
 * Frank Lecollinet
 * [Greg Tatum](http://gregtatum.com/)
@@ -75,7 +75,7 @@ Creative coding the practice of writing software for the sake of art. That may b
 * Inigo Quilez
 * [Jam3](http://www.jam3.com/)
 * [Jaume Sanchez Elias](https://www.clicktorelease.com/)
-* Jer Thorpe
+* [Jer Thorpe](http://blog.blprnt.com/)
 * [Joshua Davis / Praystation](https://joshuadavis.com/)
 * [Keijiro Takahashi](http://www.keijiro.tokyo/)
 * [Marius Watz](http://mariuswatz.com/)
@@ -84,8 +84,8 @@ Creative coding the practice of writing software for the sake of art. That may b
 * Matt Pearson
 * Monogrid
 * [Necsoft](http://hinecsoft.com)
-* onformative
-* Robert Hodgin
+* [onformative](http://onformative.com)
+* [Robert Hodgin](http://roberthodgin.com/)
 * Samsy
 * [Steven Wittens](http://acko.net)
 * Strangeloop

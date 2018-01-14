@@ -7,7 +7,7 @@ const BlogIndex = ({ data }) => {
   let { edges: posts } = data.allMarkdownRemark
   return (
     <section className="content">
-      <Helmet title="effulgence // blog" />
+      <Helmet title="Blog / Prayash Thapa" />
 
       <div id="blog" className="fade">
         {posts

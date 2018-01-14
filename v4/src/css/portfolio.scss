@@ -1,6 +1,6 @@
 #portfolio {
   header h2 {
-    opacity: .75;
+    opacity: 0.75;
     font-size: 2em;
     margin-bottom: 2em;
   }
@@ -9,7 +9,13 @@
     margin-bottom: 2em;
 
     a img {
+      opacity: 1;
+      transition: opacity 200ms ease-out;
       width: 100%;
+
+      &:hover {
+        opacity: 0.5;
+      }
     }
 
     .project-title,
@@ -21,8 +27,8 @@
 
     .project-details {
       display: block;
-      padding: 1em 0;
-      opacity: .75;
+      padding: 2em 0;
+      opacity: 0.75;
     }
   }
 }

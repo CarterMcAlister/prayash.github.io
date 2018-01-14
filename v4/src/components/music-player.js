@@ -4,12 +4,11 @@ import YouTube from 'react-youtube'
 import Delay from 'react-delay'
 import tracks from '../data/tracks'
 import '../css/player.scss'
-var sc
 
 const CLIENT_ID = 'a364360d3c9782e360e4759ce0424007'
-let track
+let sc
 
-class MusicPlayer extends Component {
+export default class MusicPlayer extends Component {
   state = {
     active: this.props.songs[0],
     current: 0,
@@ -19,13 +18,12 @@ class MusicPlayer extends Component {
   }
 
   fetch = () => {
-    // sc = require('soundcloud')
-    let superfluousText = 'Effulgence & Immensus - '
-
     // Disable SC API calls for now.
+    // sc = require('soundcloud')
     // sc.initialize({ client_id: CLIENT_ID });
     // sc.get('/users/1041317/tracks').then((tracks) => {
     // console.log(tracks);
+
     let fetchedTracks = []
     tracks.forEach(t => {
       let url = `${t.stream_url}?client_id=${CLIENT_ID}`
@@ -37,7 +35,7 @@ class MusicPlayer extends Component {
         cover: cover,
         artist: {
           name: 'Effulgence',
-          song: trackName.replace(superfluousText, '')
+          song: trackName.replace('Effulgence & Immensus - ', '')
         }
       })
     })
@@ -48,6 +46,7 @@ class MusicPlayer extends Component {
 
   componentDidMount = () => {
     let playerElement = this.refs.player
+
     playerElement.addEventListener('timeupdate', this.updateProgress)
     playerElement.addEventListener('ended', this.end)
     playerElement.addEventListener('error', this.next)
@@ -56,6 +55,7 @@ class MusicPlayer extends Component {
 
   componentWillUnmount = () => {
     let playerElement = this.refs.player
+
     playerElement.removeEventListener('timeupdate', this.updateProgress)
     playerElement.removeEventListener('ended', this.end)
     playerElement.removeEventListener('error', this.next)
@@ -286,5 +286,3 @@ class MusicPlayer extends Component {
     )
   }
 }
-
-export default MusicPlayer

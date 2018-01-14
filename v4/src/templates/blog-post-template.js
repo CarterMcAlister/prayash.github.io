@@ -25,7 +25,7 @@ class BlogPostTemplate extends React.Component {
     return (
       <section className="content">
         <Helmet
-          title={frontmatter.title}
+          title={`${frontmatter.title} / Blog / Prayash Thapa`}
           meta={[
             { name: 'description', content: frontmatter.description },
             { property: 'og:type', content: 'article' },

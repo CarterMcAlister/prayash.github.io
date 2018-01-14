@@ -1,6 +1,6 @@
 #about {
   article {
-    opacity: .75;
+    opacity: 0.75;
   }
 
   a {
@@ -22,5 +22,9 @@
 
   p {
     font-size: 1.5em;
+  }
+
+  .gatsby-image-outer-wrapper {
+    margin: 1em 0;
   }
 }

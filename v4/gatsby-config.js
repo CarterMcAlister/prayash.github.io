@@ -44,13 +44,30 @@ module.exports = {
         ]
       }
     },
+    {
+      resolve: `gatsby-plugin-favicon`,
+      options: {
+        logo: './src/pages/favicon.png',
+        injectHTML: true,
+        icons: {
+          android: true,
+          appleIcon: true,
+          appleStartup: true,
+          coast: false,
+          favicons: true,
+          firefox: true,
+          twitter: true,
+          yandex: false,
+          windows: false
+        }
+      }
+    },
     'gatsby-plugin-react-helmet',
     'gatsby-transformer-json',
     'gatsby-transformer-yaml',
     'gatsby-plugin-sharp',
     'gatsby-transformer-sharp',
     'gatsby-plugin-offline',
-    'gatsby-plugin-emotion',
     'gatsby-plugin-react-next',
     'gatsby-plugin-sass'
   ]

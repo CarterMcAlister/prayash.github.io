@@ -17,7 +17,7 @@ let songs = [
 
 const Music = () => (
   <section className="content">
-    <Helmet title="effulgence // music" />
+    <Helmet title="Music / Prayash Thapa" />
     <MusicPlayer songs={songs} />
   </section>
 )

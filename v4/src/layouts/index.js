@@ -13,7 +13,7 @@ export default class Layout extends React.Component {
     let route = this.props.location.pathname
 
     return (
-      <main className={route === '/' ? 'home' : 'notHome'}>
+      <main className={route === '/' ? 'home' : 'not-home'}>
         <Header breadcrumb={route === '/' ? '' : route} />
 
         <GLView zoom={1} />

@@ -1,6 +1,6 @@
 #blog {
   header h2 {
-    opacity: .75;
+    opacity: 0.75;
     font-size: 2em;
   }
 
@@ -16,8 +16,8 @@
     border-bottom: 1px rgba(0, 0, 0, 0.25) solid;
 
     h2 {
-      margin: 0.5em 0 0.5em 0;
-      opacity: .75;
+      margin: 0.25em 0 0.25em 0;
+      opacity: 0.75;
       font-size: 2em;
 
       a {
@@ -28,7 +28,7 @@
     }
 
     p {
-      margin: 0.5em 0;
+      margin: 0.25em 0;
       font-size: 1.2em;
     }
   }
@@ -81,7 +81,7 @@
 
     h2 {
       margin: 0.5em 0 0.5em 0;
-      opacity: .75;
+      opacity: 0.75;
       font-size: 2em;
 
       @media only screen and (max-width: 476px) {

@@ -8,7 +8,7 @@ export default ({ data }) => {
 
   return (
     <section>
-      <Helmet title="prayash thapa" />
+      <Helmet title="Prayash Thapa / Code, Art & Music" />
       <Emblem />
     </section>
   )

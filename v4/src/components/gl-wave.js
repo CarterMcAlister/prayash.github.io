@@ -1,9 +1,9 @@
 import * as THREE from 'three'
 import { radians } from '../utils/math'
-import vertShader from '../shaders/wave.vs'
-import fragShader from '../shaders/wave.fs'
+import vs from '../shaders/wave.vs'
+import fs from '../shaders/wave.fs'
 
-export default class Onda {
+export default class GLWave {
   constructor() {
     this.group = new THREE.Group()
     this.uniforms = {
@@ -13,7 +13,7 @@ export default class Onda {
       }
     }
 
-    this.obj = this.createObj(vertShader, fragShader)
+    this.obj = this.createObj(vs, fs)
     this.obj.position.set(0, 0, 0)
     this.obj.rotation.set(radians(-90), 0, 0)
 

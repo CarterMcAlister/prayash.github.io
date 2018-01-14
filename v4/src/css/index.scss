@@ -45,7 +45,7 @@ html {
   font-weight: bolder;
 }
 
-body#container {
+#container {
   font-family: Neuzeit-Book, Helvetica Neue, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   font-size: 14px;
@@ -63,7 +63,7 @@ body#container {
     display: block;
   }
 
-  header#header {
+  #header {
     h1 a,
     h2,
     nav a {
@@ -78,7 +78,7 @@ body#container {
     z-index: -99;
   }
 
-  .notHome {
+  .not-home {
     #header .logo h1 {
       padding-right: 0;
     }
@@ -100,6 +100,7 @@ p {
 }
 
 h2 {
+  line-height: 2em;
   margin-top: 0;
 }
 
@@ -129,6 +130,18 @@ a {
 .home {
   height: 100vh;
   overflow: hidden;
+}
+
+.pad-8-top {
+  padding-top: 8px;
+}
+
+.gl-view canvas {
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
 }
 
 // ************************************************************************************
@@ -185,23 +198,29 @@ header#header {
       opacity: 0.66;
       padding: 1em;
 
-      @media only screen and (max-width: 476px) {
-        font-size: 1.25em;
-      }
-
       a {
         position: relative;
       }
+    }
+
+    h2 {
+      color: #202020;
+      font-size: 1.25em;
+      font-weight: 500;
+      opacity: 0.66;
     }
 
     .breadcrumb {
       text-align: center;
       margin: 0;
       font-size: 1.5em;
-      font-weight: 500;
-      color: #202020;
-      opacity: 0.66;
+      color: inherit;
+      opacity: 0.33;
       padding: 1em 0;
+
+      .fa-chevron-left:before {
+        -webkit-text-stroke: 2px #ebebeb;
+      }
     }
   }
 }

@@ -11,10 +11,11 @@ import processes from '../assets/img/processes.jpg'
 export default function Work() {
   return (
     <section className="content">
-      <Helmet title="effulgence // work" />
+      <Helmet title="Work / Prayash Thapa" />
+
       <div id="portfolio" className="fade">
         <article className="project">
-          <a href="http://effulgence.io/nucleactor" target="_blank">
+          <a href="http://prayash.io/nucleactor" target="_blank">
             <img src={nucleactor} alt="nucleactor" width="600px" />
           </a>
           <span className="project-details">
@@ -26,7 +27,7 @@ export default function Work() {
         </article>
 
         <article className="project">
-          <a href="http://effulgence.io/musiverse" target="_blank">
+          <a href="http://prayash.io/musiverse" target="_blank">
             <img src={musiverse} alt="musiverse" width="600px" />
           </a>
           <span className="project-details">

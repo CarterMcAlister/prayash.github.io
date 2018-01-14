@@ -27,8 +27,9 @@ export default class HTML extends React.Component {
           <meta httpEquiv="X-UA-Compatible" content="IE=edge" />
           <meta
             name="viewport"
-            content="width=device-width, initial-scale=1.0001, minimum-scale=1.0001, maximum-scale=1.0001, user-scalable=no"
+            content="width=device-width, shrink-to-fit=0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0"
           />
+          <meta name="apple-mobile-web-app-capable" content="yes" />
 
           <meta name="robots" content="index, follow" />
           <meta name="author" content="Prayash Thapa" />
