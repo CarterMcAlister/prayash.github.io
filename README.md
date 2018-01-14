@@ -1,11 +1,11 @@
-## http://effulgence.io
+## http://prayash.io
 
-You can read about the development of this site on my [blog](http://effulgence.io/blog/evolution-of-effulgence/).
+You can read about the development of this site on my [blog](http://prayash.io/blog/making-of/).
 
 ### Installation
 
 ```
-- cd v1 || v2 || v3 || v4
+- cd v4 # or any other folder
 - npm install -g gatsby
 - npm install
 - npm start
