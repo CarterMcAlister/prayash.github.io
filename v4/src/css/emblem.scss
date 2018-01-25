@@ -20,7 +20,7 @@ $desktop-width: 1200px;
   }
 }
 
-#emblemContainer {
+#emblem-wrapper {
   width: 100%;
   margin: 0 auto;
 
@@ -51,11 +51,11 @@ $desktop-width: 1200px;
     #twitter,
     #youtube {
       cursor: pointer;
-      transition: fill-opacity .5s;
+      transition: fill-opacity 0.5s;
       -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 
       &:hover {
-        fill-opacity: .6;
+        fill-opacity: 0.6;
       }
     }
 

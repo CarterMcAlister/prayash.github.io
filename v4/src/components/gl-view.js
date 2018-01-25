@@ -72,6 +72,10 @@ export default class GLView extends Component {
   }
 
   render() {
-    return <canvas id="gl-view" className="slow-fade" />
+    return (
+      <div id="gl-wrapper">
+        <canvas id="gl-view" className="slow-fade" />
+      </div>
+    )
   }
 }

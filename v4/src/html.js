@@ -29,6 +29,10 @@ export default class HTML extends React.Component {
             name="viewport"
             content="width=device-width, shrink-to-fit=0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0"
           />
+          <meta
+            name="description"
+            content="Hi, I'm Prayash. I play guitar and write code that draws things."
+          />
           <meta name="apple-mobile-web-app-capable" content="yes" />
 
           <meta name="robots" content="index, follow" />
@@ -40,6 +44,13 @@ export default class HTML extends React.Component {
           <meta property="fb:app_id" content="532441146961582" />
           <meta property="og:url" content={`http://prayash.io`} />
           <meta property="og:site_name" content="prayash thapa" />
+
+          <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin />
+          <link rel="preconnect" href="https://www.youtube.com" />
+          <link rel="preconnect" href="https://i.ytimg.com" />
+          <link rel="preconnect" href="https://i9.ytimg.com" />
+          <link rel="preconnect" href="https://s.ytimg.com" />
+
           {this.props.headComponents}
           {css}
         </head>
@@ -48,6 +59,7 @@ export default class HTML extends React.Component {
             id="___gatsby"
             dangerouslySetInnerHTML={{ __html: this.props.body }}
           />
+
           {this.props.postBodyComponents}
 
           <script async src="https://use.fontawesome.com/8d22a2b20b.js" />

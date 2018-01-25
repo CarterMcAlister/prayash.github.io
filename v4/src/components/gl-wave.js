@@ -15,7 +15,8 @@ export default class GLWave {
 
     this.obj = this.createObj(vs, fs)
     this.obj.position.set(0, 0, 0)
-    this.obj.rotation.set(radians(-90), 0, 0)
+    this.obj.rotation.set(radians(75), 0, 0)
+    // this.obj.rotation.set(radians(0), 0, 0)
 
     this.group.add(this.obj)
   }

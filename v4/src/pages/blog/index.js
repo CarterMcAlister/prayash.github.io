@@ -16,10 +16,7 @@ const BlogIndex = ({ data }) => {
             let { fields, frontmatter } = post
 
             return (
-              <div
-                className={'blog-post ' + (index === 0 ? 'first' : '')}
-                key={post.id}
-              >
+              <div className={'blog-post'} key={post.id}>
                 <time dateTime={frontmatter.date}>{post.frontmatter.date}</time>
                 <h2>
                   <Link to={post.fields.slug}>{post.frontmatter.title}</Link>

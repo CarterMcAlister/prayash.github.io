@@ -321,7 +321,7 @@ export default class Emblem extends Component {
     )
 
     return (
-      <div id="emblemContainer" className="swoosh">
+      <div id="emblem-wrapper" className="swoosh">
         {emblem}
       </div>
     )
