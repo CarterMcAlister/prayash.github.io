@@ -44,7 +44,7 @@ _Riding a helicopter through the Andes right outside Ushuaia. There's something 
 ![The majestic Cerro Fitz Roy](./champagne.jpg)
 _The pilot offered a glass of champagne at the top of the mountain where the helicopter had landed. The elevation made for a real nice buzz._
 
-I would be remiss if I didn't mention the epic glaciers en route to El Chálten, the trekking capital of Argentina. El Calafate is a small town in close proximity to some of the biggest glaciers on the Patagonian Ice Field.
+I would be remiss if I didn't mention the epic glaciers en route to El Chaltén, the trekking capital of Argentina. El Calafate is a small town in close proximity to some of the biggest glaciers on the Patagonian Ice Field.
 
 ![El Perito Moreno Glacier](./calafate.jpg)
 _El Perito Moreno, a massive 240 ft tall glacier that intermittently ruptures from its own pressure due to its constant movement. The reverberation of the sound it makes when it's cracking is impressive to say the least!_

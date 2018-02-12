@@ -18,8 +18,8 @@ void main() {
     float opacity = (1.0 - length(vPosition.xy / vec2(512.0)));
 
     vec3 v = normalize(vPosition);
-    vec3 rgb = hsv2rgb(vec3(220.55, 0.58, 0.96));
+    vec3 rgb = hsv2rgb(vec3(220.5, 0.5, 0.9));
 
-    gl_FragColor = vec4(rgb, opacity);
-    // gl_FragColor = vec4(vec3(0.0, 0.0, 0.0), opacity);
+    // gl_FragColor = vec4(rgb, opacity);
+    gl_FragColor = vec4(vec3(220.5, 0.5, 0.9), opacity);
 }

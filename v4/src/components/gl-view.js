@@ -40,11 +40,12 @@ export default class GLView extends Component {
       antialias: false,
       canvas: document.querySelector('canvas'),
       clearAlpha: 0.25,
-      preserveDrawingBuffer: false
+      preserveDrawingBuffer: false,
+      failIfMajorPerformanceCaveat: true
     })
 
     this.renderer.setClearColor(0xebebeb)
-    this.renderer.setPixelRatio(Math.min(1.0, window.devicePixelRatio))
+    this.renderer.setPixelRatio(Math.min(1.25, window.devicePixelRatio))
     this.renderer.setSize(width, height)
   }
 
