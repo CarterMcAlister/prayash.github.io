@@ -45,7 +45,11 @@ export default class HTML extends React.Component {
           <meta property="og:url" content={`http://prayash.io`} />
           <meta property="og:site_name" content="prayash thapa" />
 
-          <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin />
+          <link
+            rel="preconnect"
+            href="https://fonts.gstatic.com"
+            crossOrigin="anonymous"
+          />
           <link rel="preconnect" href="https://www.youtube.com" />
           <link rel="preconnect" href="https://i.ytimg.com" />
           <link rel="preconnect" href="https://i9.ytimg.com" />
