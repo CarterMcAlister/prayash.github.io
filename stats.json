@@ -21,8 +21,8 @@
       "path---blog-gatsby-webgl-33455f3690e41f4882b5.js.map"
     ],
     "path---blog": [
-      "path---blog-1d09fa9bb97f9ebf63d0.js",
-      "path---blog-1d09fa9bb97f9ebf63d0.js.map"
+      "path---blog-f533ff2b906f07dfac66.js",
+      "path---blog-f533ff2b906f07dfac66.js.map"
     ],
     "path---": [
       "path----557518bd178906f8d58a.js",
@@ -36,9 +36,13 @@
       "component---node-modules-gatsby-plugin-offline-app-shell-js-5c4c5a0f7af9dc69d6d7.js",
       "component---node-modules-gatsby-plugin-offline-app-shell-js-5c4c5a0f7af9dc69d6d7.js.map"
     ],
+    "path---blog-code-for-the-sake-of-art": [
+      "path---blog-code-for-the-sake-of-art-2536cb72ea74376f9443.js",
+      "path---blog-code-for-the-sake-of-art-2536cb72ea74376f9443.js.map"
+    ],
     "component---src-layouts-index-js": [
-      "component---src-layouts-index-js-a7e4212214654ccbf931.js",
-      "component---src-layouts-index-js-a7e4212214654ccbf931.js.map"
+      "component---src-layouts-index-js-676297ae5519723e2a3c.js",
+      "component---src-layouts-index-js-676297ae5519723e2a3c.js.map"
     ],
     "path---index": [
       "path---index-920c4f5515b44a45e45d.js",
@@ -61,8 +65,8 @@
       "commons-2dd1e489ef4d32f1f823.js.map"
     ],
     "path---blog-undiscovered-colors": [
-      "path---blog-undiscovered-colors-a6bbccd0e90523529226.js",
-      "path---blog-undiscovered-colors-a6bbccd0e90523529226.js.map"
+      "path---blog-undiscovered-colors-239161b3163d6b2aba00.js",
+      "path---blog-undiscovered-colors-239161b3163d6b2aba00.js.map"
     ],
     "path---404-html": [
       "path---404-html-a0e39f21c11f6a62c5ab.js",
@@ -76,6 +80,10 @@
       "path---music-a0e39f21c11f6a62c5ab.js",
       "path---music-a0e39f21c11f6a62c5ab.js.map"
     ],
+    "path---blog-5-things-music-taught-me": [
+      "path---blog-5-things-music-taught-me-c8d9f75134907b1270ae.js",
+      "path---blog-5-things-music-taught-me-c8d9f75134907b1270ae.js.map"
+    ],
     "component---src-pages-music-js": [
       "component---src-pages-music-js-8540a582e66f68ae3b47.js",
       "component---src-pages-music-js-8540a582e66f68ae3b47.js.map"
@@ -85,8 +93,8 @@
       "path---offline-plugin-app-shell-fallback-a0e39f21c11f6a62c5ab.js.map"
     ],
     "app": [
-      "app-ff7bde05c2b275640dcf.js",
-      "app-ff7bde05c2b275640dcf.js.map"
+      "app-f0eb242aecc5c545a59a.js",
+      "app-f0eb242aecc5c545a59a.js.map"
     ],
     "path---blog-origins": [
       "path---blog-origins-0583f5b0b27c86bca436.js",
@@ -99,10 +107,6 @@
     "component---src-pages-about-js": [
       "component---src-pages-about-js-aed9c0c1c79e850b4781.js",
       "component---src-pages-about-js-aed9c0c1c79e850b4781.js.map"
-    ],
-    "path---blog-creative-coding": [
-      "path---blog-creative-coding-a35fa44dea16d8334b54.js",
-      "path---blog-creative-coding-a35fa44dea16d8334b54.js.map"
     ],
     "path---blog-on-creativity": [
       "path---blog-on-creativity-2d8645eb8178233be798.js",
