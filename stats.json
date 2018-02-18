@@ -5,8 +5,8 @@
       "path---blog-software-development-80636fa8f44dd23ae80b.js.map"
     ],
     "component---src-pages-work-js": [
-      "component---src-pages-work-js-e81d0cdb861a22ec285d.js",
-      "component---src-pages-work-js-e81d0cdb861a22ec285d.js.map"
+      "component---src-pages-work-js-dc1c445b863f255ca843.js",
+      "component---src-pages-work-js-dc1c445b863f255ca843.js.map"
     ],
     "path---work": [
       "path---work-a0e39f21c11f6a62c5ab.js",
@@ -21,16 +21,16 @@
       "path---blog-gatsby-webgl-33455f3690e41f4882b5.js.map"
     ],
     "path---blog": [
-      "path---blog-f533ff2b906f07dfac66.js",
-      "path---blog-f533ff2b906f07dfac66.js.map"
+      "path---blog-32e39023d5c18e6d90b2.js",
+      "path---blog-32e39023d5c18e6d90b2.js.map"
     ],
     "path---": [
       "path----557518bd178906f8d58a.js",
       "path----557518bd178906f8d58a.js.map"
     ],
     "path---blog-2017": [
-      "path---blog-2017-0035eba6bf5de9c79743.js",
-      "path---blog-2017-0035eba6bf5de9c79743.js.map"
+      "path---blog-2017-2ee4892d988c775f924b.js",
+      "path---blog-2017-2ee4892d988c775f924b.js.map"
     ],
     "component---node-modules-gatsby-plugin-offline-app-shell-js": [
       "component---node-modules-gatsby-plugin-offline-app-shell-js-5c4c5a0f7af9dc69d6d7.js",
@@ -65,8 +65,8 @@
       "commons-2dd1e489ef4d32f1f823.js.map"
     ],
     "path---blog-undiscovered-colors": [
-      "path---blog-undiscovered-colors-239161b3163d6b2aba00.js",
-      "path---blog-undiscovered-colors-239161b3163d6b2aba00.js.map"
+      "path---blog-undiscovered-colors-0484ce7641d65639e5fe.js",
+      "path---blog-undiscovered-colors-0484ce7641d65639e5fe.js.map"
     ],
     "path---404-html": [
       "path---404-html-a0e39f21c11f6a62c5ab.js",
@@ -81,8 +81,8 @@
       "path---music-a0e39f21c11f6a62c5ab.js.map"
     ],
     "path---blog-5-things-music-taught-me": [
-      "path---blog-5-things-music-taught-me-c8d9f75134907b1270ae.js",
-      "path---blog-5-things-music-taught-me-c8d9f75134907b1270ae.js.map"
+      "path---blog-5-things-music-taught-me-ab6b2ecdcad4cfbc9ed4.js",
+      "path---blog-5-things-music-taught-me-ab6b2ecdcad4cfbc9ed4.js.map"
     ],
     "component---src-pages-music-js": [
       "component---src-pages-music-js-8540a582e66f68ae3b47.js",
@@ -93,12 +93,12 @@
       "path---offline-plugin-app-shell-fallback-a0e39f21c11f6a62c5ab.js.map"
     ],
     "app": [
-      "app-f0eb242aecc5c545a59a.js",
-      "app-f0eb242aecc5c545a59a.js.map"
+      "app-a0b02552658ef1f5ce1e.js",
+      "app-a0b02552658ef1f5ce1e.js.map"
     ],
     "path---blog-origins": [
-      "path---blog-origins-0583f5b0b27c86bca436.js",
-      "path---blog-origins-0583f5b0b27c86bca436.js.map"
+      "path---blog-origins-640d3a2778bb0b8a16f2.js",
+      "path---blog-origins-640d3a2778bb0b8a16f2.js.map"
     ],
     "path---404": [
       "path---404-a0e39f21c11f6a62c5ab.js",
@@ -107,10 +107,6 @@
     "component---src-pages-about-js": [
       "component---src-pages-about-js-aed9c0c1c79e850b4781.js",
       "component---src-pages-about-js-aed9c0c1c79e850b4781.js.map"
-    ],
-    "path---blog-on-creativity": [
-      "path---blog-on-creativity-2d8645eb8178233be798.js",
-      "path---blog-on-creativity-2d8645eb8178233be798.js.map"
     ],
     "path---about": [
       "path---about-c110f35fc4aa8e1973f0.js",
