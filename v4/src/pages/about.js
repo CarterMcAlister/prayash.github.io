@@ -32,7 +32,7 @@ const About = ({ data }) => {
 
           <br />
 
-          <Img alt="Picture of X" sizes={imageSharp.sizes} />
+          <Img alt="Prayash Thapa" sizes={imageSharp.sizes} />
 
           <br />
 

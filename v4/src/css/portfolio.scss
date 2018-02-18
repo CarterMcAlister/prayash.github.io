@@ -8,13 +8,13 @@
   .project {
     margin-bottom: 2em;
 
-    a img {
+    a .gatsby-image-wrapper > img {
       opacity: 1;
       transition: opacity 200ms ease-out;
       width: 100%;
 
       &:hover {
-        opacity: 0.5;
+        opacity: 0.5 !important;
       }
     }
 
@@ -29,6 +29,13 @@
       display: block;
       padding: 2em 0;
       opacity: 0.75;
+    }
+
+    .project-tags {
+      opacity: 0.75;
+      font-size: 1em;
+      font-weight: 500;
+      text-align: center;
     }
   }
 }

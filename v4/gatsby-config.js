@@ -1,6 +1,6 @@
 module.exports = {
   siteMetadata: {
-    title: 'prayash thapa'
+    title: 'Prayash Thapa / Code, Art & Music'
   },
   mapping: {
     'MarkdownRemark.frontmatter.author': 'AuthorsYaml'

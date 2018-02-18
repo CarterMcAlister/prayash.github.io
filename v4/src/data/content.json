@@ -1,8 +1,35 @@
 [
   {
     "index": {
-      "title": "prayash thapa",
+      "title": "Prayash Thapa / Code, Art & Music",
       "subtitle": "Welcome"
-    }
+    },
+
+    "work": [
+      {
+        "name": "Vigeverse",
+        "description": "interactive 3D data visualization",
+        "tags": "WebVR / WebGL / A-Frame",
+        "link": "http://code.viget.com/vigeverse"
+      },
+      {
+        "name": "Nucleactor",
+        "description": "soundcloud audio visualization",
+        "tags": "WebAudio / 2D Canvas / p5.js",
+        "link": "http://prayash.io/nucleactor"
+      },
+      {
+        "name": "Musiverse",
+        "description": "audio-reactive musical toy",
+        "tags": "WebGL / WebAudio / three.js",
+        "link": "http://prayash.io/musiverse"
+      },
+      {
+        "name": "Processes",
+        "description": "365 days of creative coding",
+        "tags": "Processing / Generative",
+        "link": "http://processes.effulgence.io"
+      }
+    ]
   }
 ]

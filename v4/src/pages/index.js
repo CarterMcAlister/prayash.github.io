@@ -4,18 +4,19 @@ import Helmet from 'react-helmet'
 import Emblem from '../components/emblem'
 
 export default ({ data }) => {
-  let myData = data.allContentJson.edges[0].node.index
+  let indexData = data.allContentJson.edges[0].node.index
+  let { title } = indexData
 
   return (
     <section>
-      <Helmet title="Prayash Thapa / Code, Art & Music" />
+      <Helmet title={title} />
       <Emblem />
     </section>
   )
 }
 
 export const pageQuery = graphql`
-  query contentQuery {
+  query indexQuery {
     allContentJson {
       edges {
         node {
