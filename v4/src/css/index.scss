@@ -55,7 +55,7 @@ html {
   letter-spacing: 0.02em;
   background: #ebebeb;
   margin: 0 auto;
-  height: 100vh;
+  height: 100%;
 
   #___gatsby {
     max-width: 768px;
@@ -128,7 +128,6 @@ a {
 }
 
 .home {
-  height: 100vh;
   overflow: hidden;
 }
 
