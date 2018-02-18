@@ -29,6 +29,10 @@
 
     .project-title {
       font-weight: 600;
+
+      a:hover {
+        border-bottom: 2px solid #212121;
+      }
     }
 
     .project-details {

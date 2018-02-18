@@ -28,7 +28,11 @@ export default ({ data }) => {
               </a>
 
               <span className="project-details">
-                <h2 className="project-title">{item.name}</h2>
+                <h2 className="project-title">
+                  <a href={item.link} target="_blank">
+                    {item.name}
+                  </a>
+                </h2>
                 <h3 className="project-description">{item.description}</h3>
                 <h4 className="project-tags">{item.tags}</h4>
               </span>
