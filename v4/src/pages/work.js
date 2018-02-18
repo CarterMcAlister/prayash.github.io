@@ -56,31 +56,31 @@ export const pageQuery = graphql`
     }
 
     nucleactor: imageSharp(id: { regex: "/nucleactor/" }) {
-      sizes(maxWidth: 1000) {
+      sizes(maxWidth: 666) {
         ...GatsbyImageSharpSizes
       }
     }
 
     musiverse: imageSharp(id: { regex: "/musiverse/" }) {
-      sizes(maxWidth: 1000) {
+      sizes(maxWidth: 666) {
         ...GatsbyImageSharpSizes
       }
     }
 
     processes: imageSharp(id: { regex: "/processes/" }) {
-      sizes(maxWidth: 1000) {
+      sizes(maxWidth: 666) {
         ...GatsbyImageSharpSizes
       }
     }
 
     vigeverse: imageSharp(id: { regex: "/vigeverse/" }) {
-      sizes(maxWidth: 1000) {
+      sizes(maxWidth: 666) {
         ...GatsbyImageSharpSizes
       }
     }
 
     luminate: imageSharp(id: { regex: "/luminate/" }) {
-      sizes(maxWidth: 1000) {
+      sizes(maxWidth: 666) {
         ...GatsbyImageSharpSizes
       }
     }
