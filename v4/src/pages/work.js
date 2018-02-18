@@ -7,14 +7,14 @@ import Img from 'gatsby-image'
 import '../css/portfolio.scss'
 
 export default ({ data }) => {
-  let workData = data.allContentJson.edges[0].node.work
+  let { work } = data.allContentJson.edges[0].node
 
   return (
     <section className="content">
       <Helmet title="Work / Prayash Thapa" />
 
       <div id="portfolio" className="fade">
-        {workData.map(item => {
+        {work.map(item => {
           let imageSource = item.name.toLowerCase()
 
           return (
@@ -74,6 +74,12 @@ export const pageQuery = graphql`
     }
 
     vigeverse: imageSharp(id: { regex: "/vigeverse/" }) {
+      sizes(maxWidth: 1000) {
+        ...GatsbyImageSharpSizes
+      }
+    }
+
+    luminate: imageSharp(id: { regex: "/luminate/" }) {
       sizes(maxWidth: 1000) {
         ...GatsbyImageSharpSizes
       }

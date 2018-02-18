@@ -13,6 +13,12 @@
         "link": "http://code.viget.com/vigeverse"
       },
       {
+        "name": "Luminate",
+        "description": "philanthropic mobile AR",
+        "tags": "ARKit / iOS / SceneKit",
+        "link": "http://devpost.com/software/luminate"
+      },
+      {
         "name": "Nucleactor",
         "description": "soundcloud audio visualization",
         "tags": "WebAudio / 2D Canvas / p5.js",
