@@ -7,12 +7,20 @@ draft: false
 
 The summer preceding my last year of college, I decided to study abroad in a Spanish-speaking country. I had been formally studying the language since high school and my ultimate goal was to cap it all off with an immersive experience somewhere in Latin America. I had always heard great things about Argentina, but after being exposed to Argentine films and music, it kind of left a lasting impression on me. I enrolled in a program through my school and off I went to Rosario for two months to study Argentine literature, history and culture.
 
+<br />
+
 ![The Argentine flag in Iguazú](./bandera.jpg)
+
+<br />
 
 Aside from getting stuck at the airport for a full 24 hours and having my luggage mishandled and lost for a week (thanks United), I arrived in Rosario in one piece. My host-mom turned out to be the most affectionate host I could've ever asked for. Every single night we sat down together for dinner and engaged in lively conversations spanning a variety of topics ranging from love, family, dreams, tragedy, politics, history, consciousness and spirituality amongst other things. It also helped that she knew practically no English, so I was forced to speak Spanish the entire time. She became my professora-at-home, helping me convert rudimentary Spanish sentences to more elegant ones. We developed an incredibly strong bond, and to this day, I still keep in touch with her. I would definitely like to go back and visit her in a few years. I know I've got a home in Rosario now.
 
+<br />
+
 ![Rosario, Santa Fe, Argentina](./patio.jpg)
 _The view from the patio. The constant chatter of children playing fútbol in the field below never stopped. It made for a wonderful ambience. The people are so serious about the sport that it's basically a religion. I'm not kidding – they even have a [church dedicated to Maradona](https://iglesiamaradoniana.wordpress.com/)._
+
+<br />
 
 ![Rosario, Santa Fe, Argentina](./madreyyo.jpg)
 _Me and my madre Argentina, cheesin' on the day of my departure. A bittersweet moment, but I know I'll be visiting her soon enough._
@@ -38,16 +46,26 @@ Aaaaaaand before I knew it, the program was over. It was time to say goodbye and
 ![The majestic Cerro Fitz Roy](./patagonia-beach.jpg)
 _After a few hours of a bumpy 4x4 drive through some forests, I got on a cruise through the Beagle Channel._
 
+<br />
+
 ![The majestic Cerro Fitz Roy](./ushuaia.jpg)
 _Riding a helicopter through the Andes right outside Ushuaia. There's something about the aesthetics of these mountains that makes it hard to forget._
+
+<br />
 
 ![The majestic Cerro Fitz Roy](./champagne.jpg)
 _The pilot offered a glass of champagne at the top of the mountain where the helicopter had landed. The elevation made for a real nice buzz._
 
+<br />
+
 I would be remiss if I didn't mention the epic glaciers en route to El Chaltén, the trekking capital of Argentina. El Calafate is a small town in close proximity to some of the biggest glaciers on the Patagonian Ice Field.
+
+<br />
 
 ![El Perito Moreno Glacier](./calafate.jpg)
 _El Perito Moreno, a massive 240 ft tall glacier that intermittently ruptures from its own pressure due to its constant movement. The reverberation of the sound it makes when it's cracking is impressive to say the least!_
+
+<br />
 
 And at last...
 
