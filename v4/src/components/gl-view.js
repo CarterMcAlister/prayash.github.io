@@ -47,6 +47,9 @@ export default class GLView extends Component {
     this.renderer.setClearColor(0xebebeb)
     this.renderer.setPixelRatio(Math.min(1.25, window.devicePixelRatio))
     this.renderer.setSize(width, height)
+
+    window.addEventListener('resize', () => this._resize())
+    window.addEventListener('orientationchange', () => this._resize())
   }
 
   setupScene = () => {
@@ -78,5 +81,14 @@ export default class GLView extends Component {
         <canvas id="gl-view" className="slow-fade" />
       </div>
     )
+  }
+
+  _resize() {
+    let { innerWidth: width, innerHeight: height } = window
+
+    this.renderer.setPixelRatio(Math.min(1.25, window.devicePixelRatio))
+    this.renderer.setSize(width, height)
+
+    this.camera.updateProjectionMatrix()
   }
 }
