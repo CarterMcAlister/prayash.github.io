@@ -7,7 +7,7 @@ export default class GLView extends Component {
   constructor(props) {
     super(props)
 
-    this.view = new GLWave()
+    this.wave = new GLWave()
     this.clock = new THREE.Clock()
   }
 
@@ -54,7 +54,7 @@ export default class GLView extends Component {
 
   setupScene = () => {
     this.scene = new THREE.Scene()
-    this.scene.add(this.view.group)
+    this.scene.add(this.wave)
   }
 
   setupLights = () => {
@@ -69,7 +69,7 @@ export default class GLView extends Component {
   animate = () => {
     let dt = this.clock.getDelta()
 
-    this.view.update(dt)
+    this.wave.update(dt)
 
     requestAnimationFrame(this.animate)
     this.renderer.render(this.scene, this.camera)

@@ -3,9 +3,10 @@ import { radians } from '../utils/math'
 import vs from '../shaders/wave.vs'
 import fs from '../shaders/wave.fs'
 
-export default class GLWave {
-  constructor() {
-    this.group = new THREE.Group()
+export default class GLWave extends THREE.Object3D {
+  constructor(context) {
+    super(context)
+
     this.uniforms = {
       time: {
         type: 'f',
@@ -18,7 +19,7 @@ export default class GLWave {
     this.obj.rotation.set(radians(75), 0, 0)
     // this.obj.rotation.set(radians(0), 0, 0)
 
-    this.group.add(this.obj)
+    this.add(this.obj)
   }
 
   createObj(vertexShader, fragmentShader) {
