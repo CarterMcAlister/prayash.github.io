@@ -3,7 +3,6 @@ import ReactDOM from 'react-dom'
 import Helmet from 'react-helmet'
 import Link from 'gatsby-link'
 import Img from 'gatsby-image'
-
 import '../css/portfolio.scss'
 
 export default ({ data }) => {
