@@ -1,7 +1,7 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
 import Helmet from 'react-helmet'
-import { TweetThis, FacebookShare } from '../components/Social'
+import { TweetThis, FacebookShare } from '../components/social'
 
 class BlogPostTemplate extends React.Component {
   componentDidMount() {
