@@ -1,11 +1,7 @@
 import React, { Component } from 'react'
 import Link from 'gatsby-link'
-
+import { imageFills } from '../utils/preloader'
 import '../css/emblem.scss'
-import aboutPic from '../assets/img/about.png'
-import musicPic from '../assets/img/music.jpg'
-import workPic from '../assets/img/work.jpg'
-import blogPic from '../assets/img/blog.jpg'
 
 export default class Emblem extends Component {
   render() {
@@ -51,7 +47,7 @@ export default class Emblem extends Component {
             height="100%"
             patternUnits="userSpaceOnUse"
           >
-            <image xlinkHref={aboutPic} width="100%" height="55%" />
+            <image xlinkHref={imageFills.about} width="100%" height="55%" />
           </pattern>
 
           <pattern
@@ -63,7 +59,7 @@ export default class Emblem extends Component {
             height="50%"
             patternUnits="userSpaceOnUse"
           >
-            <image xlinkHref={musicPic} width="40%" height="78%" />
+            <image xlinkHref={imageFills.music} width="40%" height="78%" />
           </pattern>
 
           <pattern
@@ -75,7 +71,7 @@ export default class Emblem extends Component {
             height="50%"
             patternUnits="userSpaceOnUse"
           >
-            <image xlinkHref={workPic} width="75%" height="60%" />
+            <image xlinkHref={imageFills.work} width="75%" height="60%" />
           </pattern>
 
           <pattern
@@ -87,7 +83,7 @@ export default class Emblem extends Component {
             height="100%"
             patternUnits="userSpaceOnUse"
           >
-            <image xlinkHref={blogPic} width="70%" height="60%" />
+            <image xlinkHref={imageFills.blog} width="70%" height="60%" />
           </pattern>
         </defs>
 
