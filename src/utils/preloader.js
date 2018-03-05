@@ -1,7 +1,7 @@
 import forEach from 'lodash/forEach'
 
-const preload = imageCollection => {
-  forEach(imageCollection, src => {
+const preload = collection => {
+  forEach(collection, src => {
     let image = new Image()
 
     image.src = src
@@ -15,4 +15,6 @@ export const imageFills = {
   work: require('../assets/img/work.jpg')
 }
 
-preload(imageFills)
+if (typeof window !== 'undefined') {
+  preload(imageFills)
+}
