@@ -1,9 +1,10 @@
-import React, { Component } from 'react'
+import React from 'react'
 import * as THREE from 'three'
 import GLGradient from './gl-gradient'
 import GLWave from './gl-wave'
+// import World from '../gl/world'
 
-export default class GLView extends Component {
+export default class GLView extends React.PureComponent {
   constructor(props) {
     super(props)
 
@@ -12,6 +13,8 @@ export default class GLView extends Component {
   }
 
   componentDidMount = () => {
+    // this.world = new World(this.container, this.props.children)
+
     this.setupCamera()
     this.setupRenderer()
     this.setupScene()
@@ -38,12 +41,12 @@ export default class GLView extends Component {
     this.renderer = new THREE.WebGLRenderer({
       alpha: false,
       antialias: false,
-      canvas: document.querySelector('canvas'),
       clearAlpha: 0.25,
       preserveDrawingBuffer: false,
       failIfMajorPerformanceCaveat: true
     })
 
+    this.container.appendChild(this.renderer.domElement)
     this.renderer.setClearColor(0xebebeb)
     this.renderer.setPixelRatio(Math.min(1.25, window.devicePixelRatio))
     this.renderer.setSize(width, height)
@@ -77,9 +80,12 @@ export default class GLView extends Component {
 
   render() {
     return (
-      <div id="gl-wrapper">
-        <canvas id="gl-view" className="slow-fade" />
-      </div>
+      <div
+        id="gl-wrapper"
+        ref={el => {
+          this.container = el
+        }}
+      />
     )
   }
 
