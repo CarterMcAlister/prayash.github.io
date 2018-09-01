@@ -22,13 +22,13 @@
         "name": "Nucleactor",
         "description": "soundcloud audio visualization",
         "tags": "WebAudio / 2D Canvas / p5.js",
-        "link": "http://prayash.io/nucleactor"
+        "link": "http://nucleactor.prayash.io"
       },
       {
         "name": "Musiverse",
         "description": "audio-reactive musical toy",
         "tags": "WebGL / WebAudio / three.js",
-        "link": "http://prayash.io/musiverse"
+        "link": "http://musiverse.prayash.io"
       },
       {
         "name": "Processes",
