@@ -87,7 +87,11 @@ export default class Emblem extends Component {
           </pattern>
         </defs>
 
-        <a xlinkHref="http://youtube.com/iameffulgence" target="_blank">
+        <a
+          xlinkHref="http://youtube.com/iameffulgence"
+          target="_blank"
+          rel="noopener"
+        >
           <path
             id="youtube"
             className="cover"
@@ -106,7 +110,11 @@ export default class Emblem extends Component {
           />
         </a>
 
-        <a xlinkHref="http://twitter.com/_prayash" target="_blank">
+        <a
+          xlinkHref="http://twitter.com/_prayash"
+          target="_blank"
+          rel="noopener"
+        >
           <path
             id="twitter"
             className="cover"
@@ -128,7 +136,11 @@ export default class Emblem extends Component {
           />
         </a>
 
-        <a xlinkHref="http://soundcloud.com/effulgence" target="_blank">
+        <a
+          xlinkHref="http://soundcloud.com/effulgence"
+          target="_blank"
+          rel="noopener"
+        >
           <path
             id="soundcloud"
             className="cover"
@@ -150,7 +162,11 @@ export default class Emblem extends Component {
           />
         </a>
 
-        <a xlinkHref="http://facebook.com/iameffulgence" target="_blank">
+        <a
+          xlinkHref="http://facebook.com/iameffulgence"
+          target="_blank"
+          rel="noopener"
+        >
           <path
             id="facebook"
             className="cover"
@@ -167,7 +183,11 @@ export default class Emblem extends Component {
           />
         </a>
 
-        <a xlinkHref="http://instagram.com/_effulgence" target="_blank">
+        <a
+          xlinkHref="http://instagram.com/prayash.io"
+          target="_blank"
+          rel="noopener"
+        >
           <path
             id="insta"
             className="cover"
@@ -196,7 +216,11 @@ export default class Emblem extends Component {
           />
         </a>
 
-        <a xlinkHref="http://behance.net/effulgence" target="_blank">
+        <a
+          xlinkHref="http://behance.net/prayash"
+          target="_blank"
+          rel="noopener"
+        >
           <path
             id="behance"
             className="cover"

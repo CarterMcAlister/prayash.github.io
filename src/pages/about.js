@@ -20,11 +20,15 @@ const About = ({ data }) => {
 
           <h3>
             I play{' '}
-            <a href="http://youtube.com/iameffulgence" target="_blank">
+            <a
+              href="http://youtube.com/iameffulgence"
+              target="_blank"
+              rel="noopener"
+            >
               guitar
             </a>{' '}
             and write{' '}
-            <a href="http://github.com/prayasht" target="_blank">
+            <a href="http://github.com/prayash" target="_blank" rel="noopener">
               code
             </a>{' '}
             that draws things.
@@ -38,7 +42,11 @@ const About = ({ data }) => {
 
           <p>
             I build software for a living and currently reside in{' '}
-            <a href="https://goo.gl/maps/dRHoHcJc5WJ2" target="_blank">
+            <a
+              href="https://goo.gl/maps/dRHoHcJc5WJ2"
+              target="_blank"
+              rel="noopener"
+            >
               <del>Kathmandu, Nepal</del>
             </a>{' '}
             Boulder, CO.
@@ -48,9 +56,14 @@ const About = ({ data }) => {
             I use this space primarily for sharing personal projects, music, and
             other artsy things that I may be working on. If you'd like an
             overview of my professional work, check out my{' '}
-            <a href="http://linkedin.com/in/prayasht" target="_blank">
+            <a
+              href="http://linkedin.com/in/prayasht"
+              target="_blank"
+              rel="noopener"
+            >
               online resume
-            </a>.
+            </a>
+            .
           </p>
           <p>
             Feel free to peruse my <Link to="/blog">blog</Link> if you're
@@ -59,7 +72,11 @@ const About = ({ data }) => {
           </p>
           <p>
             Want to make something together?{' '}
-            <a href="mailto:prayash@effulgence.io" target="_blank">
+            <a
+              href="mailto:prayash@effulgence.io"
+              target="_blank"
+              rel="noopener"
+            >
               Don't be a stranger!
             </a>
           </p>

@@ -18,7 +18,7 @@ export default ({ data }) => {
 
           return (
             <article className="project" key={item.name}>
-              <a href={item.link} target="_blank">
+              <a href={item.link} target="_blank" rel="noopener">
                 <Img
                   title={item.name}
                   alt={item.name}
@@ -28,7 +28,7 @@ export default ({ data }) => {
 
               <span className="project-details">
                 <h2 className="project-title">
-                  <a href={item.link} target="_blank">
+                  <a href={item.link} target="_blank" rel="noopener">
                     {item.name}
                   </a>
                 </h2>
